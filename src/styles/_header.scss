@@ -1,0 +1,22 @@
+.logo {
+  width: 100px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+
+    &.active {
+      border-bottom: 1px solid black;
+      padding: 0 0.1rem;
+    }
+  }
+}

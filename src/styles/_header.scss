@@ -1,22 +1,188 @@
-.logo {
-  width: 100px;
+$dark: #212121;
+$light: #efefef;
+$color: #b3e5fc;
+
+@mixin btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 5px;
+  right: 25px;
+  transition-duration: 0.25s;
+}
+
+@mixin icon($height, $width) {
+  transition-duration: 0.5s;
+  position: absolute;
+  height: $height;
+  width: $width;
+  top: 15px;
+  right: 0;
+  background-color: $dark;
+}
+
+@mixin icon-before($height, $width, $top) {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: $dark;
+  content: '';
+  top: $top;
+}
+
+@mixin icon-after($height, $width, $top) {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: $dark;
+  content: '';
+  top: $top;
+}
+
+.header {
+  display: flex;
+  gap: 0.5rem;
+  background-color: black;
+  color: white;
+  align-items: center;
+  padding: 1rem;
+
+  &__container {
+    max-width: 1400px;
+    margin-inline: auto;
+  }
+
+  &__logo {
+    width: 100px;
+  }
+
+  &__link {
+    color: white;
+    text-decoration: none;
+  }
+  & .social-icon {
+    color: white;
+    width: 25px;
+    height: 25px;
+  }
+  &__links-wrapper {
+    margin-left: auto;
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+.navbar__toggle-btn {
+  @include btn();
+
+  .navbar__toggle-icon {
+    @include icon(3px, 30px);
+
+    &:before {
+      @include icon-before(3px, 30px, -10px);
+    }
+
+    &:after {
+      @include icon-after(3px, 30px, 10px);
+    }
+  }
+
+  &.open {
+    .navbar__toggle-icon {
+      transition-duration: 0.5s;
+      background: transparent;
+
+      &:before {
+        transform: rotateZ(45deg) scaleX(1.25) translate(6px, 6px);
+      }
+
+      &:after {
+        transform: rotateZ(-45deg) scaleX(1.25) translate(7px, -7px);
+      }
+    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  padding: 1rem;
+  margin-top: 1rem;
+
+  &__toggle-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__links {
+    width: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    transform: translateX(100px);
+    opacity: 0;
+    transition: transform 200ms linear;
+    background-color: #fafafa;
+
+    &.open {
+      display: flex;
+      visibility: visible;
+      transform: translateX(0px);
+      opacity: 1;
+      height: auto;
+      width: auto;
+      transition: transform 200ms linear;
+    }
+  }
 
   &__link {
-    text-transform: uppercase;
     text-decoration: none;
     color: inherit;
-    font-size: 1rem;
-    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.75rem 1rem;
+    text-align: center;
+
+    &:hover {
+      background-color: rgb(252, 252, 199);
+    }
 
     &.active {
-      border-bottom: 1px solid black;
-      padding: 0 0.1rem;
+      background-color: #fff2a7;
+      border-radius: 10px;
+    }
+  }
+
+  &__btn {
+    margin-top: 0.5rem;
+    color: inherit;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    margin-top: 0rem;
+    display: flex;
+
+    &__toggle-btn {
+      display: none;
+    }
+    &__links {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: auto;
+      gap: 0.5rem;
+    }
+    &__btn {
+      margin-top: 0;
     }
   }
 }

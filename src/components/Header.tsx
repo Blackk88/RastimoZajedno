@@ -11,11 +11,6 @@ import { faMobileScreenButton } from '@fortawesome/free-solid-svg-icons'
 
 function Header() {
   const [lang, setLang] = useState(localStorage.getItem('lang') || 'MNE 🇲🇪')
-  const [isIconHover, setIsIconHover] = useState({
-    facebook: false,
-    instagram: false,
-    youtube: false,
-  })
   const [showToggler, setShowToggler] = useState(false)
 
   function selectLanguage() {
@@ -25,38 +20,6 @@ function Header() {
       setLang('MNE 🇲🇪')
     }
     localStorage.setItem('lang', lang)
-  }
-
-  function handleToggle() {
-    setShowToggler((prevToggle) => !prevToggle)
-  }
-
-  function handleIconMouseOver(e: React.MouseEvent<SVGSVGElement>) {
-    switch (e.currentTarget.dataset.icon) {
-      case 'instagram':
-        setIsIconHover({ ...isIconHover, instagram: true })
-        break
-      case 'facebook':
-        setIsIconHover({ ...isIconHover, facebook: true })
-        break
-      case 'youtube':
-        setIsIconHover({ ...isIconHover, youtube: true })
-        break
-    }
-  }
-
-  function handleIconMouseOut(e: React.MouseEvent<SVGSVGElement>) {
-    switch (e.currentTarget.dataset.icon) {
-      case 'instagram':
-        setIsIconHover({ ...isIconHover, instagram: false })
-        break
-      case 'facebook':
-        setIsIconHover({ ...isIconHover, facebook: false })
-        break
-      case 'youtube':
-        setIsIconHover({ ...isIconHover, youtube: false })
-        break
-    }
   }
 
   return (
@@ -76,13 +39,6 @@ function Header() {
               icon={faInstagram}
               className="social-icon"
               name="instagram"
-              bounce={isIconHover.instagram}
-              onMouseOver={(e: React.MouseEvent<SVGSVGElement>) =>
-                handleIconMouseOver(e)
-              }
-              onMouseLeave={(e: React.MouseEvent<SVGSVGElement>) =>
-                handleIconMouseOut(e)
-              }
             />
           </a>
           <a
@@ -90,30 +46,14 @@ function Header() {
             target="_blank"
             className="header__link"
           >
-            <FontAwesomeIcon
-              icon={faFacebook}
-              className="social-icon"
-              bounce={isIconHover.facebook}
-              onMouseOver={handleIconMouseOver}
-              onMouseLeave={(e: React.MouseEvent<SVGSVGElement>) =>
-                handleIconMouseOut(e)
-              }
-            />
+            <FontAwesomeIcon icon={faFacebook} className="social-icon" />
           </a>
           <a
             href="https://www.youtube.com/@udruzenjeroditelja5745"
             target="_blank"
             className="header__link"
           >
-            <FontAwesomeIcon
-              icon={faYoutube}
-              className="social-icon"
-              bounce={isIconHover.youtube}
-              onMouseOver={handleIconMouseOver}
-              onMouseLeave={(e: React.MouseEvent<SVGSVGElement>) =>
-                handleIconMouseOut(e)
-              }
-            />
+            <FontAwesomeIcon icon={faYoutube} className="social-icon" />
           </a>
         </div>
       </div>
@@ -122,7 +62,7 @@ function Header() {
           <img src={logo} alt="Rastimo Zajedno Logo" className="header__logo" />
           <div
             className={`navbar__toggle-btn ${showToggler ? 'open' : ''}`}
-            onClick={handleToggle}
+            onClick={() => setShowToggler((prev) => !prev)}
           >
             <div className="navbar__toggle-icon"></div>
           </div>

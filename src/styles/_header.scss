@@ -6,8 +6,8 @@ $color: #b3e5fc;
   position: absolute;
   width: 30px;
   height: 30px;
-  top: 5px;
-  right: 25px;
+  top: 25px;
+  right: 10px;
   transition-duration: 0.25s;
 }
 
@@ -47,7 +47,7 @@ $color: #b3e5fc;
   background-color: black;
   color: white;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 2rem;
 
   &__container {
     max-width: 1400px;
@@ -55,7 +55,7 @@ $color: #b3e5fc;
   }
 
   &__logo {
-    width: 100px;
+    width: 200px;
   }
 
   &__link {
@@ -66,6 +66,10 @@ $color: #b3e5fc;
     color: white;
     width: 25px;
     height: 25px;
+
+    &:hover {
+      transform: scale(1.25);
+    }
   }
   &__links-wrapper {
     margin-left: auto;
@@ -109,12 +113,16 @@ $color: #b3e5fc;
 }
 
 .navbar {
-  padding: 1rem;
-  margin-top: 1rem;
+  padding: 1rem 2rem;
+  background: rgb(210, 245, 173);
+  background: linear-gradient(
+    90deg,
+    rgba(210, 245, 173, 1) 0%,
+    rgba(255, 251, 56, 1) 90%
+  );
 
   &__toggle-wrapper {
     display: flex;
-    justify-content: center;
     position: relative;
   }
 
@@ -126,10 +134,10 @@ $color: #b3e5fc;
     visibility: hidden;
     height: 0;
     width: 0;
-    transform: translateX(100px);
+    transform: translateX(50px);
     opacity: 0;
-    transition: transform 200ms linear;
-    background-color: #fafafa;
+    transition: transform 100ms ease-in-out;
+    background-color: transparent;
 
     &.open {
       display: flex;
@@ -138,7 +146,6 @@ $color: #b3e5fc;
       opacity: 1;
       height: auto;
       width: auto;
-      transition: transform 200ms linear;
     }
   }
 
@@ -148,13 +155,15 @@ $color: #b3e5fc;
     text-transform: uppercase;
     padding: 0.75rem 1rem;
     text-align: center;
+    font-weight: 500;
 
     &:hover {
-      background-color: rgb(252, 252, 199);
+      background-color: #f7cc0e;
+      border-radius: 10px;
     }
 
     &.active {
-      background-color: #fff2a7;
+      background-color: #f7cc0e;
       border-radius: 10px;
     }
   }
@@ -166,10 +175,12 @@ $color: #b3e5fc;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 850px) {
   .navbar {
     margin-top: 0rem;
     display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
 
     &__toggle-btn {
       display: none;
@@ -177,9 +188,13 @@ $color: #b3e5fc;
     &__links {
       display: flex;
       flex-direction: row;
-      align-items: center;
+      justify-content: flex-end;
+      visibility: visible;
       margin-left: auto;
-      gap: 0.5rem;
+      transform: translateX(0px);
+      opacity: 1;
+      height: auto;
+      width: auto;
     }
     &__btn {
       margin-top: 0;

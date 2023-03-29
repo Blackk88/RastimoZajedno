@@ -72,10 +72,10 @@ function Header() {
             Home
           </NavLink>
           <NavLink to="/about" className="navbar__link">
-            About Us
+            Our Work
           </NavLink>
           <NavLink to="/volunteering" className="navbar__link">
-            Help Us
+            Videos
           </NavLink>
           <NavLink to="/gallery" className="navbar__link">
             Gallery

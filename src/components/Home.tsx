@@ -1,18 +1,40 @@
-import promo from '../../public/promo.jpeg'
+import title from '../assets/title.jpg'
+import heart from '../assets/heart.jpg'
 
 function Home() {
+  function showModalDonate() {
+    console.log('test')
+  }
+
   return (
     <main className="main">
-      <img src={promo} alt="" className="img__promo" />
+      <img
+        src={title}
+        alt="Group of children with stage and a lot of different colors balloons."
+        className="img__promo"
+      />
       <h1 className="text__promo">
         Group of parents of children and youth with developmental disabilities,
         guided by a common goal and mission to improve the quality of life of
         their children!
       </h1>
 
+      <div className="donation">
+        <h2 className="text__h2 text--centered">You want to donate?</h2>
+        <p className="donation__cta" onClick={showModalDonate}>
+          Click here
+        </p>
+        <img
+          onClick={showModalDonate}
+          src={heart}
+          alt="Picture of big red heart on yellow background"
+          className="img donation__img"
+        />
+      </div>
+
       <div className="description">
         <div className="description__wrapper">
-          <h4 className="description__title">Main Goals</h4>
+          <h3 className="text__h3 text--centered">Main Goals</h3>
           <p>
             Improvement and development of the system of social, educational and
             health care for persons with disabilities;
@@ -29,7 +51,7 @@ function Home() {
           </p>
         </div>
         <div className="description__wrapper">
-          <h4 className="description__title">Our activities:</h4>
+          <h3 className="text__h3 text--centered">Our activities</h3>
           <p>
             Work on informing the general public about all problems related to
             the development of children, youth and persons with disabilities;

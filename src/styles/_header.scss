@@ -175,7 +175,7 @@ $color: #b3e5fc;
   }
 }
 
-@media (min-width: 850px) {
+@media (min-width: 870px) {
   .navbar {
     margin-top: 0rem;
     display: flex;
@@ -193,6 +193,7 @@ $color: #b3e5fc;
       margin-left: auto;
       transform: translateX(0px);
       opacity: 1;
+      gap: 0.5rem;
       height: auto;
       width: auto;
     }

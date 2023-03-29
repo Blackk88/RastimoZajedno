@@ -22,19 +22,6 @@ function Home() {
         their children!
       </h1>
 
-      <div className="donation">
-        <h2 className="text__h2 text--centered">You want to donate?</h2>
-        <p className="donation__cta" onClick={handleShow}>
-          Click here
-        </p>
-        <img
-          onClick={handleShow}
-          src={heart}
-          alt="Picture of big red heart on yellow background"
-          className="img donation__img"
-        />
-      </div>
-
       <div className="description">
         <div className="description__wrapper">
           <h3 className="text__h3 text--centered">Main Goals</h3>
@@ -65,6 +52,18 @@ function Home() {
             disabilities and their families;
           </p>
         </div>
+      </div>
+      <div className="donation">
+        <h2 className="text__h2 text--centered">You want to donate?</h2>
+        <p className="donation__cta" onClick={handleShow}>
+          Click here
+        </p>
+        <img
+          onClick={handleShow}
+          src={heart}
+          alt="Picture of big red heart on yellow background"
+          className="img donation__img"
+        />
       </div>
       <Modal show={show} onHide={handleClose} centered>
         <Modal.Header closeButton>

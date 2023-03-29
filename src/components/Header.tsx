@@ -26,7 +26,7 @@ function Header() {
     <div className="header__container">
       <div className="header">
         <a href="tel:+382 67 066456" className="header__link">
-          +382 67 066456
+          +38267066456
         </a>
         <FontAwesomeIcon icon={faMobileScreenButton} className="social-icon" />
         <div className="header__links-wrapper">

@@ -22,7 +22,6 @@
   object-fit: cover;
   padding: 0;
   margin: 0;
-
   margin-inline: auto;
 }
 
@@ -54,6 +53,7 @@
   position: relative;
   width: 50%;
   margin-inline: auto;
+  margin-top: 3rem;
   &__img {
     cursor: pointer;
     object-fit: cover;

@@ -41,7 +41,7 @@ function Footer() {
       <div className="footer__contacts">
         <h4 className="footer__title">Contacts:</h4>
         <a className="footer__link" href="tel:+382 67 066456">
-          Phone: +382 67 066 456
+          Phone: +38267066456
         </a>
         <a
           className="footer__link"

@@ -1,10 +1,13 @@
 import title from '../assets/title.jpg'
-import heart from '../assets/heart.jpg'
+import heart from '../assets/heart.png'
+import { useState } from 'react'
+import Modal from 'react-bootstrap/Modal'
 
 function Home() {
-  function showModalDonate() {
-    console.log('test')
-  }
+  const [show, setShow] = useState(false)
+
+  const handleClose = () => setShow(false)
+  const handleShow = () => setShow(true)
 
   return (
     <main className="main">
@@ -21,11 +24,11 @@ function Home() {
 
       <div className="donation">
         <h2 className="text__h2 text--centered">You want to donate?</h2>
-        <p className="donation__cta" onClick={showModalDonate}>
+        <p className="donation__cta" onClick={handleShow}>
           Click here
         </p>
         <img
-          onClick={showModalDonate}
+          onClick={handleShow}
           src={heart}
           alt="Picture of big red heart on yellow background"
           className="img donation__img"
@@ -63,6 +66,24 @@ function Home() {
           </p>
         </div>
       </div>
+      <Modal show={show} onHide={handleClose} centered>
+        <Modal.Header closeButton>
+          <Modal.Title>Local Donations Instructions</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>510-000000010181354</p>
+          <p>CKB Banka AD Podgorica</p>
+        </Modal.Body>
+        <Modal.Header>
+          <Modal.Title>International Donations Instructions</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>NVO “Rastimo Zajedno”</p>
+          <p>SWIFT: CKBCMEPG</p>
+          <p>IBAN: ME25510000000020322510</p>
+          <p>CKB Banka AD Podgorica</p>
+        </Modal.Body>
+      </Modal>
     </main>
   )
 }

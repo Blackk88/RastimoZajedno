@@ -112,7 +112,7 @@ $color: #b3e5fc;
   }
 }
 
-.navbar {
+.header__navbar {
   padding: 1rem 2rem;
   background: rgb(210, 245, 173);
   background: linear-gradient(
@@ -120,7 +120,9 @@ $color: #b3e5fc;
     rgba(210, 245, 173, 1) 0%,
     rgba(255, 251, 56, 1) 90%
   );
+}
 
+.navbar {
   &__toggle-wrapper {
     display: flex;
     position: relative;
@@ -138,6 +140,7 @@ $color: #b3e5fc;
     opacity: 0;
     transition: transform 100ms ease-in-out;
     background-color: transparent;
+    gap: 0.5rem;
 
     &.open {
       display: flex;
@@ -160,6 +163,7 @@ $color: #b3e5fc;
     &:hover {
       background-color: #f7cc0e;
       border-radius: 10px;
+      color: inherit;
     }
 
     &.active {
@@ -175,30 +179,48 @@ $color: #b3e5fc;
   }
 }
 
-@media (min-width: 870px) {
+@media (min-width: 550px) {
   .navbar {
+    &__links {
+      width: 50%;
+      align-items: center;
+    }
+    &__link {
+      min-width: 250px;
+    }
+  }
+}
+
+@media (min-width: 870px) {
+  .header__navbar {
     margin-top: 0rem;
     display: flex;
     align-items: center;
     padding: 1rem 2rem;
 
-    &__toggle-btn {
-      display: none;
-    }
-    &__links {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      visibility: visible;
-      margin-left: auto;
-      transform: translateX(0px);
-      opacity: 1;
-      gap: 0.5rem;
-      height: auto;
-      width: auto;
-    }
-    &__btn {
-      margin-top: 0;
+    .navbar {
+      &__toggle-btn {
+        display: none;
+      }
+      &__links {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        visibility: visible;
+        margin-left: auto;
+        transform: translateX(0px);
+        opacity: 1;
+        gap: 0.5rem;
+        height: auto;
+        width: auto;
+      }
+
+      &__link {
+        min-width: auto;
+      }
+      &__btn {
+        margin-top: 0;
+      }
     }
   }
 }

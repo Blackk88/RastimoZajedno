@@ -57,7 +57,7 @@ function Header() {
           </a>
         </div>
       </div>
-      <nav className="navbar">
+      <nav className="header__navbar">
         <div className="navbar__toggle-wrapper">
           <img src={logo} alt="Rastimo Zajedno Logo" className="header__logo" />
           <div

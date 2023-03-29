@@ -7,7 +7,7 @@ $color: #b3e5fc;
   width: 30px;
   height: 30px;
   top: 25px;
-  right: 10px;
+  right: 25px;
   transition-duration: 0.25s;
 }
 
@@ -86,14 +86,14 @@ $color: #b3e5fc;
   @include btn();
 
   .navbar__toggle-icon {
-    @include icon(3px, 30px);
+    @include icon(2px, 30px);
 
     &:before {
-      @include icon-before(3px, 30px, -10px);
+      @include icon-before(2px, 30px, -10px);
     }
 
     &:after {
-      @include icon-after(3px, 30px, 10px);
+      @include icon-after(2px, 30px, 10px);
     }
   }
 
@@ -117,7 +117,7 @@ $color: #b3e5fc;
 }
 
 .header__navbar {
-  padding: 1rem 2rem;
+  padding: 1rem;
   background: rgb(210, 245, 173);
   background: linear-gradient(
     90deg,
@@ -127,6 +127,7 @@ $color: #b3e5fc;
 }
 
 .navbar {
+  padding: 1rem 2rem;
   &__toggle-wrapper {
     display: flex;
     position: relative;
@@ -200,7 +201,7 @@ $color: #b3e5fc;
     margin-top: 0rem;
     display: flex;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem;
 
     .navbar {
       &__toggle-btn {

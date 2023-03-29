@@ -1,18 +1,18 @@
 .main {
   background-repeat: no-repeat;
   background-size: contain;
+  // background-position: top;
+  // background-blend-mode: normal;
+  // background-color: #11ffee00;
   margin-inline: auto;
   max-width: 1400px;
-  background-position: top;
-  background-blend-mode: normal;
-  background-color: #11ffee00;
   background: rgb(210, 245, 173);
   background: linear-gradient(
     90deg,
     rgba(210, 245, 173, 1) 0%,
     rgba(255, 251, 56, 1) 90%
   );
-  padding-bottom: 2rem;
+  padding: 2rem 1rem;
 }
 
 .img__promo {

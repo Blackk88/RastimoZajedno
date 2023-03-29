@@ -3,7 +3,7 @@
     font-size: 1.75rem;
     text-align: center;
     padding: 2rem 1.5rem;
-    width: 80%;
+    width: 100%;
     margin-inline: auto;
     color: black;
     line-height: 1.25;
@@ -24,5 +24,13 @@
 
   &--centered {
     text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .text {
+    &__promo {
+      width: 80%;
+    }
   }
 }

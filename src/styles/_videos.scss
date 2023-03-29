@@ -1,0 +1,41 @@
+.videos {
+  margin-inline: auto;
+  max-width: 1400px;
+  padding: 2rem 1rem;
+  background: rgb(210, 245, 173);
+  background: linear-gradient(
+    90deg,
+    rgba(210, 245, 173, 1) 0%,
+    rgba(255, 251, 56, 1) 90%
+  );
+
+  &__container {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__description {
+    padding: 0 1rem;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    max-width: 700px;
+    margin-inline: auto;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  &__facebook {
+    height: (50vw);
+  }
+}
+
+@media (min-width: 768px) {
+  .videos {
+    &__facebook {
+      height: 383px;
+    }
+  }
+}

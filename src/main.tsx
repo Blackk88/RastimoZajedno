@@ -4,9 +4,9 @@ import Home from './components/Home'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './styles/index.scss'
 import RootLayout from './components/RootLayout'
-import About from './components/OurWork'
-import HelpUs from './components/HelpUs'
-import Gallery from './components/Gallery'
+import OurWork from './components/OurWork'
+import Videos from './components/Videos'
+import About from './components/About'
 import Contacts from './components/Contacts'
 
 const router = createBrowserRouter([
@@ -18,16 +18,16 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
+        path: '/our-work',
+        element: <OurWork />,
+      },
+      {
+        path: '/videos',
+        element: <Videos />,
+      },
+      {
         path: '/about',
         element: <About />,
-      },
-      {
-        path: '/volunteering',
-        element: <HelpUs />,
-      },
-      {
-        path: '/gallery',
-        element: <Gallery />,
       },
       {
         path: '/contacts',

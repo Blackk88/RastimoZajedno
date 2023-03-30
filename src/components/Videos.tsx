@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next'
+
 function Videos() {
+  const { t } = useTranslation()
+
   return (
     <div className="videos">
       <h3 className="videos__description">Video of our activities</h3>
@@ -13,7 +17,7 @@ function Videos() {
         ></iframe>
       </div>
 
-      <h3 className="videos__description">"Equal in diversity"</h3>
+      <h3 className="videos__description">{t('videos.title2')}</h3>
       <div className="videos__container">
         <iframe
           width="682"
@@ -25,7 +29,7 @@ function Videos() {
         ></iframe>
       </div>
 
-      <h3 className="videos__description">"Think before you park!".</h3>
+      <h3 className="videos__description">{t('videos.title3')}.</h3>
       <div className="videos__container">
         <iframe
           width="682"

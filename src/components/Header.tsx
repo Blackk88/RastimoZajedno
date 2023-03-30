@@ -15,15 +15,25 @@ function Header() {
   const [showToggler, setShowToggler] = useState(false)
   const { t, i18n } = useTranslation()
 
+  useEffect(() => {
+    if (lang) {
+      i18n.changeLanguage(localStorage.getItem('i18nextLng') || 'mne')
+    }
+  }, [i18n, lang])
+
   function selectLanguage() {
     if (lang === 'MNE 🇲🇪') {
       setLang('EN 🇺🇸')
       i18n.changeLanguage('en')
+      localStorage.setItem('lang', 'EN 🇺🇸')
+      localStorage.setItem('i18nextLng', 'en')
     } else if (lang === 'EN 🇺🇸') {
       setLang('MNE 🇲🇪')
       i18n.changeLanguage('mne')
+      localStorage.setItem('i18nextLng', 'mne')
+      localStorage.setItem('lang', 'MNE 🇲🇪')
     }
-    localStorage.setItem('lang', lang)
+    // localStorage.setItem('lang', lang)
   }
 
   console.log(i18n.language)

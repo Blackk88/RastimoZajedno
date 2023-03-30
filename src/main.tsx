@@ -8,6 +8,7 @@ import OurWork from './components/OurWork'
 import Videos from './components/Videos'
 import About from './components/About'
 import Contacts from './components/Contacts'
+import './i18n'
 
 const router = createBrowserRouter([
   {

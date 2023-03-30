@@ -1,6 +1,6 @@
 import logo from '../assets/logo.png'
 import { NavLink } from 'react-router-dom'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faInstagram,
@@ -8,20 +8,25 @@ import {
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons'
 import { faMobileScreenButton } from '@fortawesome/free-solid-svg-icons'
+import { useTranslation } from 'react-i18next'
 
 function Header() {
   const [lang, setLang] = useState(localStorage.getItem('lang') || 'MNE 🇲🇪')
   const [showToggler, setShowToggler] = useState(false)
+  const { t, i18n } = useTranslation()
 
   function selectLanguage() {
     if (lang === 'MNE 🇲🇪') {
       setLang('EN 🇺🇸')
+      i18n.changeLanguage('en')
     } else if (lang === 'EN 🇺🇸') {
       setLang('MNE 🇲🇪')
+      i18n.changeLanguage('mne')
     }
     localStorage.setItem('lang', lang)
   }
 
+  console.log(i18n.language)
   return (
     <div className="header__container">
       <div className="header">

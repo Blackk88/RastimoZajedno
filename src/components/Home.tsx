@@ -49,6 +49,7 @@ function Home() {
           className="img donation__img"
         />
       </div>
+
       <Modal show={show} onHide={handleClose} centered>
         <Modal.Header closeButton>
           <Modal.Title>{t('donations.local')}</Modal.Title>

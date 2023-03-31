@@ -26,17 +26,15 @@ function Header() {
       setLang('EN 🇺🇸')
       i18n.changeLanguage('en')
       localStorage.setItem('lang', 'EN 🇺🇸')
-      localStorage.setItem('i18nextLng', 'en')
     } else if (lang === 'EN 🇺🇸') {
       setLang('MNE 🇲🇪')
       i18n.changeLanguage('mne')
-      localStorage.setItem('i18nextLng', 'mne')
       localStorage.setItem('lang', 'MNE 🇲🇪')
     }
   }
 
   return (
-    <div className="header__container">
+    <header className="header__container">
       <div className="header">
         <a href="tel:+38267066456" className="header__link">
           +382 67 066456
@@ -47,6 +45,7 @@ function Header() {
             href="https://www.instagram.com/nvo_rastimo_zajedno"
             target="_blank"
             className="header__link"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon
               icon={faInstagram}
@@ -58,6 +57,7 @@ function Header() {
             href="https://www.facebook.com/RastimoZajednoDG"
             target="_blank"
             className="header__link"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faFacebook} className="social-icon" />
           </a>
@@ -65,6 +65,7 @@ function Header() {
             href="https://www.youtube.com/@udruzenjeroditelja5745"
             target="_blank"
             className="header__link"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faYoutube} className="social-icon" />
           </a>
@@ -104,7 +105,7 @@ function Header() {
           </button>
         </div>
       </nav>
-    </div>
+    </header>
   )
 }
 export default Header

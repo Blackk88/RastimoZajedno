@@ -47,6 +47,7 @@ function Contacts() {
           href="https://www.instagram.com/nvo_rastimo_zajedno"
           target="_blank"
           className="contacts__social-icon"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faInstagram} />
         </a>
@@ -54,6 +55,7 @@ function Contacts() {
           href="https://www.facebook.com/RastimoZajednoDG"
           target="_blank"
           className="contacts__social-icon"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faFacebook} />
         </a>
@@ -61,6 +63,7 @@ function Contacts() {
           href="https://www.youtube.com/@udruzenjeroditelja5745"
           target="_blank"
           className="contacts__social-icon"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faYoutube} />
         </a>

@@ -11,14 +11,15 @@ function Footer() {
   const { t } = useTranslation()
 
   return (
-    <div className="footer">
-      <img src={logo} alt="" className="footer__logo" />
+    <footer className="footer">
+      <img src={logo} alt="Rastimo Zajedno Logo" className="footer__logo" />
 
       <div className="footer__links-wrapper">
         <a
           href="https://www.instagram.com/nvo_rastimo_zajedno"
           target="_blank"
           className="footer__link"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon
             icon={faInstagram}
@@ -30,6 +31,7 @@ function Footer() {
           href="https://www.facebook.com/RastimoZajednoDG"
           target="_blank"
           className="footer__link"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faFacebook} className="social-icon" />
         </a>
@@ -37,6 +39,7 @@ function Footer() {
           href="https://www.youtube.com/@udruzenjeroditelja5745"
           target="_blank"
           className="footer__link"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faYoutube} className="social-icon" />
         </a>
@@ -56,12 +59,13 @@ function Footer() {
           className="footer__link"
           href="https://goo.gl/maps/oMFfyL1mDhnMz8AL7"
           target="_blank"
+          rel="noopener noreferrer"
         >
           {t('footer.address')} Str. Novice Skerovica b.b, 81410-Danilovgrad,
           Montenegro
         </a>
       </div>
-    </div>
+    </footer>
   )
 }
 export default Footer

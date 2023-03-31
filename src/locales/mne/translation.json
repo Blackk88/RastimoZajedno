@@ -1,6 +1,6 @@
 {
   "home": {
-    "promo": "Osnovala ga je grupa roditelja djece i mladih sa smetnjama u razvoju, vodedi se zajedničkim ciljem i misijom da unaprijede i poboljšaju kvalitet života svoje djece!",
+    "promo": "Osnovala ga je grupa roditelja djece i mladih sa smetnjama u razvoju, vodeći se zajedničkim ciljem i misijom da unaprijede i poboljšaju kvalitet života svoje djece!",
     "mainGoals": "Naši glavni ciljevi",
     "mainGoals1": "Unapređenje i razvoj sistema socijalne, vaspitno-obrazovne, i zdravstvene zaštite osoba sa invaliditetom",
     "mainGoals2": "Podsticanje i uključivanje djece i omladine sa smetnjama u razvoju u sve segmente društvenog i ekonomskog života, a naročito u oblasti obrazovanja i zapošljavanja",
@@ -9,7 +9,7 @@
       "title": "Naše aktivnosti",
       "text1": "Rad na informisanju šire javnosti o svim problemima koji su vezani za razvoj djece , omladine i lica sa smetnjama u razvoju",
       "text2": "Evidentiranje djece, omladine i lica sa smetnjama u razvoju",
-      "text3": "Pružanje pomodi djeci omladini i licima sa smetnjama u razvoju i njihovim porodicama"
+      "text3": "Pružanje pomoći djeci omladini i licima sa smetnjama u razvoju i njihovim porodicama"
     }
   },
 
@@ -17,7 +17,7 @@
     "title": "NVO “Rastimo zajedno”",
     "whoWeAre": {
       "title": "O nama",
-      "text1": "NVO 'Rastimo zajedno' je neprofitna nevladina organizacija, koja je osnovana 2007. godine. Osnovala ga je grupa roditelja djece i mladih sa smetnjama u razvoju, vodedi se zajedničkim ciljem i misijom da unaprijede i poboljšaju kvalitet života svoje djece. Na samom početku, Udruženje je brojalo 7 članova, a stručne termine su održavali jednom nedeljno u iznajmljenim prostorijama Crvenog krsta.",
+      "text1": "NVO 'Rastimo zajedno' je neprofitna nevladina organizacija, koja je osnovana 2007. godine. Osnovala ju je grupa roditelja djece i mladih sa smetnjama u razvoju, vodedi se zajedničkim ciljem i misijom da unaprijede i poboljšaju kvalitet života svoje djece. Na samom početku, Udruženje je brojalo 7 članova, a stručne termine su održavali jednom nedeljno u iznajmljenim prostorijama Crvenog krsta.",
       "text2": "Nedugo zatim, NVO je prestala sa radom, sve do 2013. godine kada su se opet udružili roditelji djece i mladih sa smetnjama u razvoju i obnovili rad Udruženja uz podršku Opštine Danilovgrad. Sada brojimo oko 50 članova, uzrasta od 3 do 35 godina, dok stručne tretmane i radno-terapijsku radionicu sprovodimo u prostorijama udruženja u Ul. Novice Škerovida b.b. u Danilovgradu."
     },
     "ourGoals": {
@@ -56,8 +56,28 @@
     "text4": "Stoga se unaprijed radujemo Vašoj podršci i interesovanju za naše aktivnosti, jer ciljna grupa na koju smo mi fokusirani – definitivno treba i zaslužuje punu pažnju naše zajednice."
   },
   "videos": {
-    "title1": "",
+    "title1": "Pogledajte video naših aktivnosti",
     "title2": "“Jednaki u različitostima”",
     "title3": "“Razmisli prije nego što parkiraš!”"
-  }
+  },
+  "donations": {
+    "title": "Želite pomoći donacijom?",
+    "local": "Instrukcije za uplate iz Crne Gore",
+    "international": "Instrukcije za uplate iz Inostranstva",
+    "clickHere": "Kliknite ovdje"
+  },
+  "footer": {
+    "contacts": "Kontakt informacije",
+    "phone": "Kontakt telefon:",
+    "email": "Email adresa:",
+    "address": "Adresa:"
+  },
+  "navbar": {
+    "home": "Početna",
+    "about": "O nama",
+    "work": "Naš rad",
+    "video": "Video",
+    "contacts": "Kontakt"
+  },
+  "socialMedia": "Socijalne mreže"
 }

@@ -9,11 +9,13 @@ import {
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useTranslation } from 'react-i18next'
 
 function Contacts() {
+  const { t } = useTranslation()
   return (
     <div className="contacts">
-      <h2 className="text__title">Our contacts</h2>
+      <h2 className="text__title">{t('footer.contacts')}</h2>
       <div className="contacts__list">
         <p className="contacts__text">
           <FontAwesomeIcon icon={faLocationDot} className="contacts__icon" />
@@ -39,7 +41,7 @@ function Contacts() {
           className="contacts__map"
         ></iframe>
       </div>
-      <h2 className="text__title">Social media</h2>
+      <h2 className="text__title">{t('socialMedia')}</h2>
       <div className="contacts__social">
         <a
           href="https://www.instagram.com/nvo_rastimo_zajedno"

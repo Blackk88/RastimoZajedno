@@ -5,7 +5,7 @@ function Videos() {
 
   return (
     <div className="videos">
-      <h3 className="videos__description">Video of our activities</h3>
+      <h3 className="videos__description">{t('videos.title1')}</h3>
       <div className="videos__container">
         <iframe
           className="videos__facebook"

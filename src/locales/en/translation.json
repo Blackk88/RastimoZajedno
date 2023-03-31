@@ -57,10 +57,31 @@
 
   },
   "videos": {
-    "title1": "",
+    "title1": "Video of our activities",
     "title2": "“Equal in diversity”",
     "title3": "“Think before you park!”"
-  }
+  },
+  "donations": {
+    "title": "You want to donate?",
+    "local": "Local Donations Instructions",
+    "international": "International Donations Instructions",
+    "clickHere": "Click here"
+  },
+  "footer": {
+    "contacts": "Contacts",
+    "phone": "Phone:",
+    "email": "Email:",
+    "address": "Address:"
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "work": "Our work",
+    "video": "Video",
+    "contacts": "Contacts"
+    
+  },
+  "socialMedia": "Social Media"
 
   
 }

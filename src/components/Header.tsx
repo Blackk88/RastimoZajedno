@@ -33,10 +33,8 @@ function Header() {
       localStorage.setItem('i18nextLng', 'mne')
       localStorage.setItem('lang', 'MNE 🇲🇪')
     }
-    // localStorage.setItem('lang', lang)
   }
 
-  console.log(i18n.language)
   return (
     <div className="header__container">
       <div className="header">
@@ -84,19 +82,19 @@ function Header() {
         </div>
         <div className={`navbar__links ${showToggler ? 'open' : ''}`}>
           <NavLink to="/" className="navbar__link">
-            Home
+            {t('navbar.home')}
           </NavLink>
           <NavLink to="/about" className="navbar__link">
-            About Us
+            {t('navbar.about')}
           </NavLink>
           <NavLink to="/our-work" className="navbar__link">
-            Our Work
+            {t('navbar.work')}
           </NavLink>
           <NavLink to="/videos" className="navbar__link">
-            Videos
+            {t('navbar.video')}
           </NavLink>
           <NavLink to="/contacts" className="navbar__link">
-            Contacts
+            {t('navbar.contacts')}
           </NavLink>
           <button
             onClick={selectLanguage}

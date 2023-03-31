@@ -38,9 +38,9 @@ function Home() {
         </div>
       </div>
       <div className="donation">
-        <h2 className="text__h2 text--centered">You want to donate?</h2>
+        <h2 className="text__h2 text--centered">{t('donations.title')}</h2>
         <p className="donation__cta" onClick={handleShow}>
-          Click here
+          {t('donations.clickHere')}
         </p>
         <img
           onClick={handleShow}
@@ -51,14 +51,14 @@ function Home() {
       </div>
       <Modal show={show} onHide={handleClose} centered>
         <Modal.Header closeButton>
-          <Modal.Title>Local Donations Instructions</Modal.Title>
+          <Modal.Title>{t('donations.local')}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <p>510-000000010181354</p>
           <p>CKB Banka AD Podgorica</p>
         </Modal.Body>
         <Modal.Header>
-          <Modal.Title>International Donations Instructions</Modal.Title>
+          <Modal.Title>{t('donations.international')}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <p>NVO “Rastimo Zajedno”</p>

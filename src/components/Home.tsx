@@ -1,4 +1,5 @@
 import title from '../assets/title.jpg'
+import title2 from '../assets/title2.jpg'
 import heart from '../assets/heart.png'
 import { useState } from 'react'
 import Modal from 'react-bootstrap/Modal'
@@ -15,7 +16,7 @@ function Home() {
   return (
     <main className="main">
       <img
-        src={title}
+        src={title2}
         alt="Group of children with stage and a lot of different colors balloons."
         className="img__promo"
       />

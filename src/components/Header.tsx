@@ -36,8 +36,8 @@ function Header() {
   return (
     <header className="header__container">
       <div className="header">
-        <a href="tel:+38267066456" className="header__link">
-          +382 67 066456
+        <a href="tel:+38269321684" className="header__link">
+          +382 69 321 684
         </a>
         <FontAwesomeIcon icon={faMobileScreenButton} className="social-icon" />
         <div className="header__links-wrapper">

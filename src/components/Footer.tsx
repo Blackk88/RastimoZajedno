@@ -46,8 +46,8 @@ function Footer() {
       </div>
       <div className="footer__contacts">
         <h4 className="footer__title">{t('footer.contacts')}</h4>
-        <a className="footer__link" href="tel:+38267066456">
-          {t('footer.phone')} +382 67 066456
+        <a className="footer__link" href="tel:+38269321684">
+          {t('footer.phone')} +382 69 321684
         </a>
         <a
           className="footer__link"

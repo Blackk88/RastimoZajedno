@@ -11,6 +11,7 @@ import Contacts from './Pages/Contacts'
 
 import './i18n'
 import './styles/index.scss'
+import Team from './Pages/Team'
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <About />,
+      },
+      {
+        path: '/our-team',
+        element: <Team />,
       },
       {
         path: '/contacts',

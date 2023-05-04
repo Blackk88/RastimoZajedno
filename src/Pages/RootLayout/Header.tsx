@@ -36,9 +36,36 @@ function Header() {
           <NavLink to="/" className="navbar__link">
             {t('navbar.home')}
           </NavLink>
-          <NavLink to="/about" className="navbar__link">
-            {t('navbar.about')}
-          </NavLink>
+          <div className="dropdown navbar__link">
+            <a
+              className="header__dropdown-title"
+              href="/about"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              {t('navbar.about')}
+            </a>
+
+            <ul className="dropdown-menu header__dropdown-menu">
+              <li>
+                <NavLink
+                  className="dropdown-item header__dropdown-item"
+                  to="/about"
+                >
+                  {t('navbar.about')}
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className="dropdown-item header__dropdown-item"
+                  to="our-team"
+                >
+                  {t('navbar.team')}
+                </NavLink>
+              </li>
+            </ul>
+          </div>
           <NavLink to="/our-work" className="navbar__link">
             {t('navbar.work')}
           </NavLink>

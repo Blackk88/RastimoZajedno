@@ -1,17 +1,9 @@
 .our-work {
-  margin-inline: auto;
-  max-width: 1400px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 1rem;
   gap: 1rem;
-  background: rgb(210, 245, 173);
-  background: linear-gradient(
-    90deg,
-    rgba(210, 245, 173, 1) 0%,
-    rgba(255, 251, 56, 1) 90%
-  );
   &__card {
     flex: 1 1 45%;
     object-fit: cover;

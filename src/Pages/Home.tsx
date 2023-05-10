@@ -1,8 +1,9 @@
+import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
+import Modal from 'react-bootstrap/Modal'
+
 import promo from '../assets/promo.jpg'
 import heart from '../assets/heart.png'
-import { useState } from 'react'
-import Modal from 'react-bootstrap/Modal'
-import { useTranslation } from 'react-i18next'
 
 function Home() {
   const [show, setShow] = useState(false)

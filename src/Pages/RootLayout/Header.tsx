@@ -42,7 +42,7 @@ function Header() {
           <NavLink to="/" className="navbar__link">
             {t('navbar.home')}
           </NavLink>
-          <div className="dropdown text-center">
+          <div className="dropdown-center text-center">
             <button
               className="navbar__link dropdown-toggle w-100"
               role="button"
@@ -52,7 +52,7 @@ function Header() {
               {t('navbar.about')}
             </button>
 
-            <ul className="dropdown-menu header__dropdown-menu">
+            <ul className="dropdown-menu header__dropdown-menu text-center">
               <li>
                 <NavLink
                   className="dropdown-item header__dropdown-item"

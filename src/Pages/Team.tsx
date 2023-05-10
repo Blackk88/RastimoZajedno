@@ -16,6 +16,7 @@ function Team() {
               className="rounded team-image w-100 w-md-50"
               width="200"
               height="500"
+              loading="lazy"
             />
           </div>
           <div className="col-12 col-lg-6">

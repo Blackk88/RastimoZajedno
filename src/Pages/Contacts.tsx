@@ -10,11 +10,14 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useTranslation } from 'react-i18next'
+import { ContactForm } from '../components/ContactForm'
 
 function Contacts() {
   const { t } = useTranslation()
   return (
     <div className="contacts">
+      <ContactForm />
+
       <h2 className="text__title">{t('footer.contacts')}</h2>
       <div className="contacts__list">
         <p className="contacts__text">

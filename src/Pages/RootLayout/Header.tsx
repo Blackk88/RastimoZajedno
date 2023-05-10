@@ -44,7 +44,7 @@ function Header() {
           </NavLink>
           <div className="dropdown text-center">
             <button
-              className="navbar__link dropdown-toggle w-full"
+              className="navbar__link dropdown-toggle w-100"
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"

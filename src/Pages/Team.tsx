@@ -6,8 +6,8 @@ import teamPhoto5 from '../assets/team/5.png'
 
 function Team() {
   return (
-    <main className="mb-5">
-      <section className="mt-5 px-3">
+    <main className="my-5">
+      <section className="px-3">
         <div className="row">
           <div className="col-12 col-lg-6">
             <img
@@ -33,6 +33,8 @@ function Team() {
             </p>
           </div>
         </div>
+
+        <hr className="my-5" />
 
         <div className="d-flex flex-row-reverse row mt-5">
           <div className="col-12 col-lg-6">
@@ -63,7 +65,9 @@ function Team() {
           </div>
         </div>
 
-        <div className="d-flex row mt-5">
+        <hr className="my-5" />
+
+        <div className="d-flex row">
           <div className="col-12 col-lg-6">
             <img
               src={teamPhoto3}
@@ -89,7 +93,9 @@ function Team() {
           </div>
         </div>
 
-        <div className="d-flex flex-row-reverse row mt-5">
+        <hr className="my-5" />
+
+        <div className="d-flex flex-row-reverse row">
           <div className="col-12 col-lg-6">
             <img
               src={teamPhoto4}
@@ -113,7 +119,9 @@ function Team() {
           </div>
         </div>
 
-        <div className="d-flex row mt-5">
+        <hr className="my-5" />
+
+        <div className="d-flex row">
           <div className="col-12 col-lg-6">
             <img
               src={teamPhoto5}

@@ -42,9 +42,9 @@ function Header() {
           <NavLink to="/" className="navbar__link">
             {t('navbar.home')}
           </NavLink>
-          <div className="dropdown">
+          <div className="dropdown text-center">
             <button
-              className="navbar__link dropdown-toggle"
+              className="navbar__link dropdown-toggle w-full"
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"

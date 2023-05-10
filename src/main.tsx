@@ -1,14 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Home from './components/Home'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import './styles/index.scss'
-import RootLayout from './components/RootLayout'
-import OurWork from './components/OurWork'
-import Videos from './components/Videos'
-import About from './components/About'
-import Contacts from './components/Contacts'
+// Components
+import Home from './Pages/Home'
+import RootLayout from './Pages/RootLayout'
+import OurWork from './Pages/OurWork'
+import Videos from './Pages/Videos'
+import About from './Pages/About'
+import Contacts from './Pages/Contacts'
+
 import './i18n'
+import './styles/index.scss'
+import Team from './Pages/Team'
 
 const router = createBrowserRouter([
   {
@@ -31,6 +34,10 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
+        path: '/our-team',
+        element: <Team />,
+      },
+      {
         path: '/contacts',
         element: <Contacts />,
       },
@@ -43,3 +50,12 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <RouterProvider router={router}></RouterProvider>
   </React.StrictMode>
 )
+
+export const CONTACTS = {
+  instagram: 'https://www.instagram.com/nvo_rastimo_zajedno',
+  facebook: 'https://www.facebook.com/RastimoZajednoDG',
+  youTube: 'https://www.youtube.com/@udruzenjeroditelja5745',
+  phone: '+38269321684',
+  address: 'Str. Novice Skerovica b.b, 81410-Danilovgrad',
+  email: 'udruzenjeroditeljadg@gmail.com',
+}

@@ -1,0 +1,59 @@
+@use '../../styles/animation.scss' as *;
+.header-contacts {
+  &__container {
+    display: flex;
+    background-color: #151515;
+    color: #fefefe;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+
+    &--phone {
+      transform: translateY(-1px);
+      width: 15px;
+      margin-right: 5px;
+    }
+    &--social {
+      font-size: 1.5rem;
+      width: 30px;
+      &:hover {
+        transform: scale(1.25);
+      }
+    }
+    &:hover {
+      color: #f6c809;
+      #phone-icon {
+        animation: shake 750ms;
+      }
+    }
+  }
+  &__social-wrapper {
+    display: flex;
+    gap: 5px;
+  }
+
+  &__language-icon {
+    width: 35px;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-contacts {
+    &__social-wrapper {
+      gap: 1.75rem;
+    }
+
+    &__link {
+      &--social {
+        font-size: 2rem;
+      }
+    }
+  }
+}

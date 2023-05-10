@@ -4,7 +4,7 @@ import {
   faFacebook,
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons'
-import logo from '../assets/logo.png'
+import logo from '../../assets/logo.png'
 import { useTranslation } from 'react-i18next'
 
 function Footer() {

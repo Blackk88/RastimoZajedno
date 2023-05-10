@@ -1,18 +1,26 @@
+import teamPhoto1 from '../assets/team/1.png'
+import teamPhoto2 from '../assets/team/2.png'
+import teamPhoto3 from '../assets/team/3.png'
+import teamPhoto4 from '../assets/team/4.png'
+import teamPhoto5 from '../assets/team/5.png'
+
 function Team() {
   return (
-    <main>
-      <section className="mt-5">
-        <div className="d-flex px-3 gap-3">
-          <img
-            src="/src/assets/team/1.png"
-            alt="Dunja Pajović photo"
-            className="rounded float-start team-image"
-            width="400"
-            height="300"
-          />
-          <div className="d-flex align-items-center">
-            <p className="fs-5">
-              <span className="fs-4 fw-bold">Dunja Pajović</span>, diplomirani
+    <main className="mb-5">
+      <section className="mt-5 px-3">
+        <div className="row">
+          <div className="col-12 col-lg-6">
+            <img
+              src={teamPhoto1}
+              alt="Dunja Pajović photo"
+              className="rounded team-image w-100 w-md-50"
+              width="200"
+              height="500"
+            />
+          </div>
+          <div className="col-12 col-lg-6">
+            <p className="fs-5 mt-4 mt-lg-0">
+              <span className="fs-4 fw-bold">Dunja Pajović</span> diplomirani
               sociolog i magistar Inkluzivnog obrazovanja sa licencom za
               obavljanje osnovnih stručnih poslova u socijalnoj i dječijoj
               zaštiti; dodatna edukacija: "Tretman problema u ponašanju kod
@@ -26,16 +34,18 @@ function Team() {
           </div>
         </div>
 
-        <div className="d-flex flex-row-reverse px-3 gap-3 mt-5">
-          <img
-            src="/src/assets/team/2.png"
-            alt="Dunja Pajović photo"
-            className="rounded float-start w-50 "
-            width="400"
-            height="300"
-          />
-          <div className="d-flex align-items-center">
-            <p className="fs-5">
+        <div className="d-flex flex-row-reverse row mt-5">
+          <div className="col-12 col-lg-6">
+            <img
+              src={teamPhoto2}
+              alt="Dunja Pajović photo"
+              className="rounded team-image w-100 w-md-50"
+              width="200"
+              height="500"
+            />
+          </div>
+          <div className="col-12 col-lg-6">
+            <p className="fs-5 mt-4 mt-lg-0">
               <span className="fs-4 fw-bold">
                 Marina Kljajević - Direktorica NVO “Rastimo zajedno.
               </span>{' '}
@@ -53,16 +63,18 @@ function Team() {
           </div>
         </div>
 
-        <div className="d-flex px-3 gap-3 mt-5">
-          <img
-            src="/src/assets/team/3.png"
-            alt="Dunja Pajović photo"
-            className="rounded w-50"
-            width="400"
-            height="300"
-          />
-          <div className="d-flex align-items-center">
-            <p className="fs-5">
+        <div className="d-flex row mt-5">
+          <div className="col-12 col-lg-6">
+            <img
+              src={teamPhoto3}
+              alt="Tamara Kljajević"
+              className="rounded team-image w-100 w-md-50"
+              width="200"
+              height="500"
+            />
+          </div>
+          <div className="col-12 col-lg-6">
+            <p className="fs-5 mt-4 mt-lg-0 align-middle">
               <span className="fs-4 fw-bold">Tamara Kljajević.</span>{' '}
               Specijalista crnogorskog jezika i južnoslovenske književnosti
               (Univerzitet Crne Gore, Filološki fakultet, Nikšić). Posjeduje
@@ -77,16 +89,18 @@ function Team() {
           </div>
         </div>
 
-        <div className="d-flex flex-row-reverse px-3 gap-3 mt-5">
-          <img
-            src="/src/assets/team/4.png"
-            alt="Dunja Pajović photo"
-            className="rounded float-start w-50 "
-            width="400"
-            height="300"
-          />
-          <div className="d-flex align-items-center">
-            <p className="fs-5">
+        <div className="d-flex flex-row-reverse row mt-5">
+          <div className="col-12 col-lg-6">
+            <img
+              src={teamPhoto4}
+              alt="Miloš Kuzmanović photo"
+              className="rounded team-image w-100 w-md-50"
+              width="200"
+              height="500"
+            />
+          </div>
+          <div className="col-12 col-lg-6">
+            <p className="fs-5 mt-4 mt-lg-0">
               <span className="fs-4 fw-bold">Miloš Kuzmanović</span>{' '}
               Specijalista primijenjenjene fizioterapije,magistrant
               fizioterapije. Licenciran od strane Komore fizioterapeuta Stručni
@@ -99,16 +113,18 @@ function Team() {
           </div>
         </div>
 
-        <div className="d-flex px-3 gap-3 mt-5">
-          <img
-            src="/src/assets/team/5.png"
-            alt="Dunja Pajović photo"
-            className="rounded w-50"
-            width="400"
-            height="300"
-          />
-          <div className="d-flex align-items-center">
-            <p className="fs-5">
+        <div className="d-flex row mt-5">
+          <div className="col-12 col-lg-6">
+            <img
+              src={teamPhoto5}
+              alt="Branka Jovanović photo"
+              className="rounded team-image w-100 w-md-50"
+              width="200"
+              height="500"
+            />
+          </div>
+          <div className="col-12 col-lg-6">
+            <p className="fs-5 mt-4 mt-lg-0">
               <span className="fs-4 fw-bold">Branka Jovanović</span> Diplomirani
               psiholog, sa licencom za obavljanje osnovnih stručnih poslova u
               socijalnoj i dječjoj zaštiti.Angažovana na projektima NVO "Rastimo

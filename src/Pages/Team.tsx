@@ -108,9 +108,9 @@ function Team() {
           <div className="col-12 col-lg-6">
             <p className="fs-5 mt-4 mt-lg-0">
               <span className="fs-4 fw-bold">Miloš Kuzmanović</span>{' '}
-              Specijalista primijenjenjene fizioterapije,magistrant
+              Specijalista primijenjenjene fizioterapije, magistrant
               fizioterapije. Licenciran od strane Komore fizioterapeuta Stručni
-              saradnik udruzenja ,,Rastimo zajedno" i učesnik u mnogobrojnim
+              saradnik udruzenja "Rastimo zajedno" i učesnik u mnogobrojnim
               projektima u radu s osobama sa invaliditetom. Udruženje "Rastimo
               zajedno" je prva organizacija u našoj zajednici koja za cilj ima
               rehabilitaciju djece i mladih sa invaliditetom. Uz timsku saradnju
@@ -135,15 +135,15 @@ function Team() {
             <p className="fs-5 mt-4 mt-lg-0">
               <span className="fs-4 fw-bold">Branka Jovanović</span> Diplomirani
               psiholog, sa licencom za obavljanje osnovnih stručnih poslova u
-              socijalnoj i dječjoj zaštiti.Angažovana na projektima NVO "Rastimo
-              zajedno". U udruženju se njeguju
-              inkluzija,razumijevanje,empatija,dogovor,sloboda odlučivanja
-              ,potpuna ravnopravnost među svim članovima. Imati jak tim ljudi
-              ,koji s posvećenošću obavljaju svoj posao je najveća snaga
-              udruženja.Kao takvo,NVO" Rastimo zajedno" ima snažnu viziju - ici
-              korak naprijed u inovacijama ,kroz projekte u oblasti prava djece
-              i mladih sa smetnjama u razvoju,u cilju osnaživanja OSI
-              ,podsticanja njihovih mogućnosti,većeg nivoa samostalnosti i
+              socijalnoj i dječjoj zaštiti. Angažovana na projektima NVO
+              "Rastimo zajedno". U udruženju se njeguju inkluzija,
+              razumijevanje, empatija, dogovor, sloboda odlučivanja, potpuna
+              ravnopravnost među svim članovima. Imati jak tim ljudi, koji s
+              posvećenošću obavljaju svoj posao je najveća snaga udruženja. Kao
+              takvo, NVO "Rastimo zajedno" ima snažnu viziju - ici korak
+              naprijed u inovacijama, kroz projekte u oblasti prava djece i
+              mladih sa smetnjama u razvoju, u cilju osnaživanja OSI,
+              podsticanja njihovih mogućnosti, većeg nivoa samostalnosti i
               učešća u društvenoj zajednici.
             </p>
           </div>

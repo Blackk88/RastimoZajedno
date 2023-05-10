@@ -24,7 +24,13 @@ function Header() {
       <ContactsHeader />
       <nav className="header__navbar">
         <div className="navbar__toggle-wrapper">
-          <img src={logo} alt="Rastimo Zajedno Logo" className="header__logo" />
+          <NavLink to="/">
+            <img
+              src={logo}
+              alt="Rastimo Zajedno Logo"
+              className="header__logo"
+            />
+          </NavLink>
           <div
             className={`navbar__toggle-btn ${showToggler ? 'open' : ''}`}
             onClick={() => setShowToggler((prev) => !prev)}
@@ -36,16 +42,15 @@ function Header() {
           <NavLink to="/" className="navbar__link">
             {t('navbar.home')}
           </NavLink>
-          <div className="dropdown navbar__link">
-            <a
-              className="header__dropdown-title"
-              href="/about"
+          <div className="dropdown">
+            <button
+              className="navbar__link dropdown-toggle"
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
               {t('navbar.about')}
-            </a>
+            </button>
 
             <ul className="dropdown-menu header__dropdown-menu">
               <li>
@@ -59,7 +64,7 @@ function Header() {
               <li>
                 <NavLink
                   className="dropdown-item header__dropdown-item"
-                  to="our-team"
+                  to="/our-team"
                 >
                   {t('navbar.team')}
                 </NavLink>

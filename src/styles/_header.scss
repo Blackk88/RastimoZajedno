@@ -43,8 +43,6 @@ $color: #b3e5fc;
 
 .header {
   display: flex;
-  // position: fixed;
-  // width: 100%;
   gap: 0.5rem;
   background-color: #101010;
   color: white;
@@ -85,6 +83,8 @@ $color: #b3e5fc;
   }
 
   &__dropdown {
+    padding: 0.75rem 1rem;
+
     &-title {
       text-decoration: none;
       color: inherit;
@@ -92,7 +92,7 @@ $color: #b3e5fc;
       font-size: inherit;
       text-align: center;
       font-weight: 500;
-      padding: 0.75rem 0;
+      padding: 0.75rem 0rem;
 
       &:hover {
         background-color: #f7cc0e;
@@ -106,9 +106,6 @@ $color: #b3e5fc;
         rgba(210, 245, 173, 1) 0%,
         rgba(255, 251, 56, 1) 90%
       );
-      &.show {
-        inset: 10px 0 0 0;
-      }
     }
 
     &-item {
@@ -209,10 +206,13 @@ $color: #b3e5fc;
   }
 
   &__link {
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
     text-decoration: none;
     color: inherit;
     text-transform: uppercase;
-    padding: 0.75rem 1rem;
+    padding: 0.5rem 0.75rem;
     font-size: inherit;
     text-align: center;
     font-weight: 500;
@@ -243,6 +243,11 @@ $color: #b3e5fc;
       align-items: center;
     }
     &__link {
+      min-width: 250px;
+    }
+  }
+  .header {
+    &__dropdown {
       min-width: 250px;
     }
   }

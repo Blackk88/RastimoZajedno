@@ -1,0 +1,6 @@
+{
+  "index": {
+    "test1": "Hello World, eh?",
+    "test2": "Happy {{ year }}!"
+  }
+}

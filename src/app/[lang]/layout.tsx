@@ -1,28 +1,21 @@
-import { dir } from "i18next";
-
-const languages = ["en", "mne"];
-
-export async function generateStaticParams() {
-  return languages.map((lng) => ({ lng }));
-}
+import { Locale, i18n } from "@/i18n-config";
 
 interface Props {
   children: React.ReactNode;
   params: {
-    lang: string;
+    lang: Locale;
   };
 }
 
-export const metadata = {
-  title: "Rastimo Zajedno",
-  description:
-    "Association of parents of children and youths with special needs, 'We grow together' from Danilovgrad",
-};
+export async function generateStaticParams() {
+  const localeParams = i18n.locales.map((locale) => ({ lang: locale }));
 
-export default function RootLayout({ children, params: { lang } }: Props) {
+  return localeParams;
+}
+
+export default function Root({ children, params }: Props) {
   return (
-    <html lang={lang} dir={dir(lang)}>
-      <head />
+    <html lang={params.lang}>
       <body>{children}</body>
     </html>
   );

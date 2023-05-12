@@ -1,7 +1,3 @@
-export default function Home({
-  params,
-}: {
-  params: { lang: string; country: string };
-}) {
-  return <h1>{JSON.stringify(params)}</h1>;
+export default function Home() {
+  return <div>Home</div>;
 }

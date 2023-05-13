@@ -38,7 +38,7 @@ export default function Contacts() {
   }, [currentLanguage]);
 
   return (
-    <div className="d-flex bg-black align-items-center justify-content-between py-2 px-3 rounded-bottom">
+    <div className="d-flex bg-black align-items-center justify-content-between py-2 py-lg-3 px-3 rounded-bottom">
       <a
         href="tel:+38269321684"
         className={

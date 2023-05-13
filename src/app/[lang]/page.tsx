@@ -1,13 +1,10 @@
-// import { useState } from "react";
-import Modal from "react-bootstrap/Modal";
-
-import promo from "@/assets/promo.jpg";
-import heart from "@/assets/heart.png";
 import Image from "next/image";
+
 import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/get-dictionary";
-// import { useState } from "react";
 import ModalDonate from "./client";
+
+import promo from "@/assets/promo.jpg";
 
 interface Props {
   children: React.ReactNode;
@@ -29,13 +26,13 @@ export default async function Home({ children, params }: Props) {
         className="w-100 object-fit-contain h-100 rounded shadow"
         placeholder="blur"
       />
-      <h1 className="text__promo px-3 text-center my-3 fw-bold text-shadow">
+      <h1 className="text__promo px-3 text-center my-5 fw-bold text-shadow">
         {dictionary.home.promo}
       </h1>
 
       <div className="px-3">
-        <div className="row justify-content-evenly px-3">
-          <div className="my-4 shadow col-12 col-md-5 rounded-4 px-3">
+        <div className="row justify-content-evenly px-3 gap-4">
+          <div className="my-4 shadow col-12 col-md col-xl-5 rounded-4 px-3">
             <h3 className="text-center my-3 fst-italic">
               {dictionary.home.mainGoals}
             </h3>
@@ -43,7 +40,7 @@ export default async function Home({ children, params }: Props) {
             <p>{dictionary.home.mainGoals2}</p>
             <p>{dictionary.home.mainGoals3}</p>
           </div>
-          <div className="my-4 shadow col-12 col-md-5 rounded-4 px-3">
+          <div className="my-4 shadow col-12 col-md col-xl-5 rounded-4 px-3">
             <h3 className="text-center my-3 fst-italic">
               {dictionary.home.activities.title}
             </h3>

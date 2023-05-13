@@ -25,8 +25,19 @@ body {
   animation: beat 0.5s infinite alternate;
 }
 
+.facebook-video {
+  width: 100%;
+}
+
 @keyframes beat {
   to {
     transform: scale(1.08);
+  }
+}
+
+@media (min-width: 768px) {
+  .facebook-video {
+    height: 383px;
+    width: 100%;
   }
 }

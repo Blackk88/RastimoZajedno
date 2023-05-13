@@ -35,8 +35,8 @@ export function getLanguageFlag(language: string): JSX.Element {
         <Image
           src={englishFlag}
           alt="Toggle language icons"
-          width={25}
-          height={25}
+          width={35}
+          height={35}
         />
       );
     case "sr":
@@ -44,8 +44,8 @@ export function getLanguageFlag(language: string): JSX.Element {
         <Image
           src={montenegroFlag}
           alt="Toggle language icons"
-          width={25}
-          height={25}
+          width={35}
+          height={35}
         />
       );
     default:

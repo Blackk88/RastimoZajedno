@@ -28,12 +28,7 @@ export function Header({ dict }: { dict: Dictionary }) {
 
   function isLinkActive(href: string): boolean {
     const url = getLinkHref(href);
-
     const isPathnameMatch = url === pathname;
-    console.log(
-      "🚀 ~ file: Header.tsx:33 ~ isLinkActive ~ isPathnameMatch:",
-      isPathnameMatch
-    );
 
     return isPathnameMatch;
   }
@@ -48,8 +43,8 @@ export function Header({ dict }: { dict: Dictionary }) {
               src={logo}
               alt="Rastimo Zajedno Logo"
               className={classes.logo}
-              width={100}
-              height={100}
+              width={150}
+              height={150}
             />
           </Link>
           <button
@@ -64,7 +59,7 @@ export function Header({ dict }: { dict: Dictionary }) {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbar-header">
-            <ul className="navbar-nav my-2 my-md-0 ms-auto gap-3 justify-content-between align-items-center ">
+            <ul className="navbar-nav my-2 my-md-0 ms-auto gap-2 justify-content-between align-items-center ">
               <li className={"nav-item " + classes.navItem}>
                 <Link
                   className={`nav-link ${classes.navLink} ${

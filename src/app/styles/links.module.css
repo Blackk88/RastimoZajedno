@@ -54,3 +54,13 @@
     transform: translate(1px, -1px) rotate(-1deg);
   }
 }
+
+@media (min-width: 768px) {
+  .link {
+    font-size: 1rem;
+  }
+  .linkSocial {
+    font-size: 2rem;
+    padding: 0;
+  }
+}

@@ -12,5 +12,24 @@
     "phone": "Phone:",
     "email": "Email:",
     "address": "Address:"
+  },
+  "home": {
+    "promo": "Group of parents of children and youth with developmental disabilities, guided by a common goal and mission to improve the quality of life of their children!",
+    "mainGoals": "Our main goals",
+    "mainGoals1": "Improvement and development of the system of social, educational and health care for persons with disabilities",
+    "mainGoals2": "Encouraging and including children and youth with disabilities in all segments of social and economic life, especially in the field of education and employment",
+    "mainGoals3": "Persistent commitment against all forms of discrimination, especially discrimination against children and youth with disabilities",
+    "activities": {
+      "title": "Our activities",
+      "text1": "Work on informing the general public about all problems related to the development of children, youth and persons with disabilities",
+      "text2": "Registration of children, youth and persons with disabilities",
+      "text3": "Providing assistance to children, youth and persons with development disabilities and their families"
+    }
+  },
+  "donations": {
+    "title": "Wish to donate?",
+    "local": "Local Donations Instructions",
+    "international": "International Donations Instructions",
+    "clickHere": "Click here"
   }
 }

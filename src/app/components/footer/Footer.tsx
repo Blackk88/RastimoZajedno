@@ -20,7 +20,7 @@ interface Dictionary {
 
 export default function Footer({ dict }: { dict: Dictionary }) {
   return (
-    <footer className="mt-auto d-flex flex-column flex-md-row-reverse align-items-center justify-content-between bg-black p-3">
+    <footer className="mt-auto d-flex flex-column flex-md-row-reverse align-items-center justify-content-between bg-black p-3 rounded-top">
       <Image src={logo} alt="Rastimo Zajedno Logo" width={100} height={100} />
 
       <div className="d-flex gap-3 my-2">

@@ -12,5 +12,24 @@
     "phone": "Kontakt telefon:",
     "email": "Email adresa:",
     "address": "Adresa:"
+  },
+  "home": {
+    "promo": "NVO Rastimo Zajedno osnovala je grupa roditelja djece i mladih sa smetnjama u razvoju, vodeći se zajedničkim ciljem i misijom da unaprijede i poboljšaju kvalitet života svoje djece!",
+    "mainGoals": "Naši glavni ciljevi",
+    "mainGoals1": "Unapređenje i razvoj sistema socijalne, vaspitno-obrazovne, i zdravstvene zaštite osoba sa invaliditetom",
+    "mainGoals2": "Podsticanje i uključivanje djece i omladine sa smetnjama u razvoju u sve segmente društvenog i ekonomskog života, a naročito u oblasti obrazovanja i zapošljavanja",
+    "mainGoals3": "Zaštita od svih vidova diskriminacije, a posebno diskriminacije lica sa invaliditetom",
+    "activities": {
+      "title": "Naše aktivnosti",
+      "text1": "Rad na informisanju šire javnosti o svim problemima koji su vezani za razvoj djece , omladine i lica sa smetnjama u razvoju",
+      "text2": "Evidentiranje djece, omladine i lica sa smetnjama u razvoju",
+      "text3": "Pružanje pomoći djeci omladini i licima sa smetnjama u razvoju i njihovim porodicama"
+    }
+  },
+  "donations": {
+    "title": "Želite pomoći donacijom?",
+    "local": "Instrukcije za uplate iz Crne Gore",
+    "international": "Instrukcije za uplate iz Inostranstva",
+    "clickHere": "Kliknite ovdje"
   }
 }

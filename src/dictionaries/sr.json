@@ -6,5 +6,11 @@
     "video": "Video",
     "contacts": "Kontakt",
     "team": "Naš Tim"
+  },
+  "footer": {
+    "contacts": "Kontakt informacije",
+    "phone": "Kontakt telefon:",
+    "email": "Email adresa:",
+    "address": "Adresa:"
   }
 }

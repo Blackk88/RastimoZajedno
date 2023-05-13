@@ -7,6 +7,7 @@ config.autoAddCss = false;
 import { getDictionary } from "@/get-dictionary";
 import { Locale, i18n } from "@/i18n-config";
 import Header from "../components/header/Header";
+import Footer from "../components/footer/Footer";
 
 import "@/app/styles/globals.css";
 
@@ -38,9 +39,10 @@ export default async function Root({ children, params }: Props) {
         />
       </head>
       <body>
-        <div className="container-lg main-wrapper p-0">
+        <div className="container-lg main-wrapper p-0 d-flex flex-column min-vh-100">
           <Header dict={dictionary.navbar} />
           {children}
+          <Footer dict={dictionary.footer} />
         </div>
         <Script
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"

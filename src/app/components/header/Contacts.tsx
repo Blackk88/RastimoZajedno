@@ -10,12 +10,14 @@ import {
   faFacebook,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+
 import {
   getLanguageFlag,
   toggleLanguageHandler,
 } from "@/app/helpers/toggle-language";
 
 import classes from "./contacts.module.css";
+import linkClasses from "@/app/styles/links.module.css";
 
 export const CONTACTS = {
   instagram: "https://www.instagram.com/nvo_rastimo_zajedno",
@@ -42,12 +44,12 @@ export default function Contacts() {
         className={
           "d-flex gap-1 align-items-center text-decoration-none" +
           " " +
-          classes.link
+          linkClasses.link
         }
       >
         <FontAwesomeIcon
           icon={faMobileScreenButton}
-          className={classes.phoneIcon}
+          className={linkClasses.phoneIcon}
         />
         +382 069 321 684
       </a>
@@ -55,7 +57,7 @@ export default function Contacts() {
         <a
           href={CONTACTS.instagram}
           target="_blank"
-          className={classes.link + " " + classes.linkSocial}
+          className={linkClasses.link + " " + linkClasses.linkSocial}
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon
@@ -67,7 +69,7 @@ export default function Contacts() {
         <a
           href={CONTACTS.facebook}
           target="_blank"
-          className={classes.link + " " + classes.linkSocial}
+          className={linkClasses.link + " " + linkClasses.linkSocial}
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faFacebook} />
@@ -75,7 +77,7 @@ export default function Contacts() {
         <a
           href={CONTACTS.youTube}
           target="_blank"
-          className={classes.link + " " + classes.linkSocial}
+          className={linkClasses.link + " " + linkClasses.linkSocial}
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon

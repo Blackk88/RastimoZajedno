@@ -6,5 +6,11 @@
     "video": "Video",
     "contacts": "Contacts",
     "team": "Our Team"
+  },
+  "footer": {
+    "contacts": "Contacts",
+    "phone": "Phone:",
+    "email": "Email:",
+    "address": "Address:"
   }
 }

@@ -1,6 +1,10 @@
 {
-  "welcome": {
-    "test1": "Salut le Monde!",
-    "test2": "Bonne année {{ year }}!"
+  "navbar": {
+    "home": "Početna",
+    "about": "O nama",
+    "work": "Naš rad",
+    "video": "Video",
+    "contacts": "Kontakt",
+    "team": "Naš Tim"
   }
 }

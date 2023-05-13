@@ -1,6 +1,10 @@
 {
-  "index": {
-    "test1": "Hello World, eh?",
-    "test2": "Happy {{ year }}!"
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "work": "Our work",
+    "video": "Video",
+    "contacts": "Contacts",
+    "team": "Our Team"
   }
 }

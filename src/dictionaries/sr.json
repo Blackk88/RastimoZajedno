@@ -1,0 +1,82 @@
+{
+  "navbar": {
+    "home": "Početna",
+    "about": "O nama",
+    "work": "Naš rad",
+    "video": "Video",
+    "contacts": "Kontakt",
+    "team": "Naš Tim"
+  },
+  "footer": {
+    "contacts": "Kontakt informacije",
+    "phone": "Kontakt telefon:",
+    "email": "Email adresa:",
+    "address": "Adresa:"
+  },
+  "home": {
+    "promo": "NVO Rastimo Zajedno osnovala je grupa roditelja djece i mladih sa smetnjama u razvoju, vodeći se zajedničkim ciljem i misijom da unaprijede i poboljšaju kvalitet života svoje djece!",
+    "mainGoals": "Naši glavni ciljevi",
+    "mainGoals1": "Unapređenje i razvoj sistema socijalne, vaspitno-obrazovne, i zdravstvene zaštite osoba sa invaliditetom",
+    "mainGoals2": "Podsticanje i uključivanje djece i omladine sa smetnjama u razvoju u sve segmente društvenog i ekonomskog života, a naročito u oblasti obrazovanja i zapošljavanja",
+    "mainGoals3": "Zaštita od svih vidova diskriminacije, a posebno diskriminacije lica sa invaliditetom",
+    "activities": {
+      "title": "Naše aktivnosti",
+      "text1": "Rad na informisanju šire javnosti o svim problemima koji su vezani za razvoj djece , omladine i lica sa smetnjama u razvoju",
+      "text2": "Evidentiranje djece, omladine i lica sa smetnjama u razvoju",
+      "text3": "Pružanje pomoći djeci omladini i licima sa smetnjama u razvoju i njihovim porodicama"
+    }
+  },
+  "donations": {
+    "title": "Želite pomoći donacijom?",
+    "local": "Instrukcije za uplate iz Crne Gore",
+    "international": "Instrukcije za uplate iz Inostranstva",
+    "clickHere": "Kliknite ovdje"
+  },
+  "about": {
+    "title": "NVO “Rastimo zajedno”",
+    "whoWeAre": {
+      "title": "O nama",
+      "text1": "NVO 'Rastimo zajedno' je neprofitna nevladina organizacija, koja je osnovana 2007. godine. Osnovala ju je grupa roditelja djece i mladih sa smetnjama u razvoju, vodedi se zajedničkim ciljem i misijom da unaprijede i poboljšaju kvalitet života svoje djece. Na samom početku, Udruženje je brojalo 7 članova, a stručne termine su održavali jednom nedeljno u iznajmljenim prostorijama Crvenog krsta.",
+      "text2": "Nedugo zatim, NVO je prestala sa radom, sve do 2013. godine kada su se opet udružili roditelji djece i mladih sa smetnjama u razvoju i obnovili rad Udruženja uz podršku Opštine Danilovgrad. Sada brojimo oko 50 članova, uzrasta od 3 do 35 godina, dok stručne tretmane i radno-terapijsku radionicu sprovodimo u prostorijama udruženja u Ul. Novice Škerovida b.b. u Danilovgradu."
+    },
+    "ourGoals": {
+      "title": "Naši glavni ciljevi",
+      "text1": "Unapređenje i razvoj sistema socijalne, vaspitno-obrazovne, i zdravstvene zaštite osoba sa invaliditetom",
+      "text2": "Podsticanje i uključivanje djece i omladine sa smetnjama u razvoju u sve segmente društvenog i ekonomskog života, a naročito u oblasti obrazovanja i zapošljavanja",
+      "text3": "Povezivanje organizacija i udruženja na nivou Crne Gore , radi povedanja kapaciteta na lokalnom nivou i lakšeg ostvarivanja prava djece , omladine i lica sa smetnjama u razvoju",
+      "text4": "Osnivanje, postojanje dnevnih centara kao alternative u podršci osobama sa smetnjama u razvoju",
+      "text5": "Edukacija članstva i donosioca odluka na državnom nivou i lokalnom nivou o organizovanju seminara, treninga i radionica",
+      "text6": "Zaštita od svih vidova diskriminacije, a posebno diskriminacije lica sa invaliditetom"
+    },
+    "activities": {
+      "title": "Naše aktivnosti",
+      "text1": "Okupljanje roditelja koji imaju djecu sa smetnjama u razvoju, građana, humanista, donatora, sponzora koji žele da pomognu akcije udruženja radi socijalizacije , rehabilitacije, integracije u društvenu i radnu sredinu djece, omladine i lica sa smetnjma u razvoju",
+      "text2": "Evidentiranje djece, omladine i lica sa smetnjama u razvoju",
+      "text3": "Pružanje pomodi djeci omladini i licima sa smetnjama u razvoju i njihovim porodicama",
+      "text4": "Saradnja sa drugim organizacijama osoba sa invaliditetom, ostalim NVO kao i sa donosiocima odluka na lokalnom nivou",
+      "text5": "Javno zastupanje i zagovaranje prava lica sa invaliditetom",
+      "text6": "Rad na informisanju šire javnosti o svim problemima koji su vezani za razvoj djece , omladine i lica sa smetnjama u razvoju",
+      "text7": "Organizovanje vaninstitucionalnog rada za članove udruženja",
+      "text8": "Podsticanje i sprovođenje aktivnosti koje ističu sposobnosti osoba sa invaliditetom i diprinose razvijanju njihovih potencijala, jačanju njihovih ličnosti i integracije u društvu",
+      "text9": "Isticanje značaja ranog otkrivanja , dijagnostikovanja i rehabilitacije i socijalizacije djece omladine i lica sa smetnjama u razvoju",
+      "text10": "Pružanje raznih vrsta pomodi članovima udruženja"
+    },
+    "trainings": {
+      "title": "Obuke kroz koje su prošli naši članovi",
+      "text1": "Kao nevladina organizacija ved pet godina ulažemo napore kako bismo riješili problem socijalne isključenosti, kroz aktivno sprovođenje radno-terapijske radionice za punoljetne članove u kojima se obučavaju tehnikama tkanja i dekupaža. Mladima sa invaliditetom je na taj način pružena mogudnost da prave raznovrsne proizvode tehnikama tkanja i dekupaža, te i da savladaju različite vještine i znanja iz oblasti ručne radinosti. Uz pomod tehničkih asistenata mladi sa smetnjama u razvoju stvaraju ukrasno- upotrebne predmete. Kroz rad i radno-terapijske radionice mladi sa smetnjama u razvoju popunjavaju svoje slobodno vrijeme i poboljšavaju kvalitet svog života. Kroz rad u radionici koji je kontinuiran stvaraju radne navike i dostižu maksimum svojih mogudnosti kojih nijesu imali priliku da ispolje",
+      "text2": "Takođe, mladi sa smetnjama u razvoju su prošli obuku rukovanje na presi za majice pod vođstvom instruktora. Radom na presi uspjeli smo da napravimo veliki broj majici po narudžbi, ali i za potrebe našeg Udruženja",
+      "text3": "Još jedna obuka koja se uspješno sprovela u našem Udruženju jeste obuka za rad na kompjuterima. Obuka na kompjuterima je stepenik više u procesu edukovanja mladih lica sa invaliditetom. Mladi sa invaliditetom imali su priliku da uz pomod programera savladaju osnove računara i na taj način nauče kako da upotpune svoje slobodno vrijeme korišdenjem osnova internet i tehnologije",
+      "text4": "Preko Javnog konkursa ZZZCG uspjeli smo da savladamo i obuku na laserskoj mašini za sječenje i graviranje, koja se nalazi trenutno u vlasništvu udruženja. Obuku, koja je trajala 3 mjeseca je savladalo 8 punoljetnih članova, 6 OSI je nakon toga zaposleno na 6 mjeseci (tokom trajanja projekta), a 2. OSI na još 9 mjeseci nakon isteka projekta. Ciljna grupa je savladala osnove mašine, te su bili u mogudnosti da graviraju i režu mnoge personalizovane detalje koje su bojali i ukrašavali po svojoj želji",
+      "text5": "Takođe, 8 mladih lica sa invaliditetom je uspješno prošlo obuku na digitalnoj mašini za štampu malog formata. Mladi sa invaliditetom su osposobljeni za rad: štampa, rezanje, bigovanje, osnovno znanje o materijalu koji se koristi."
+    },
+    "text1": "Osnivači smo Tradicionalnog maskenbala u našem gradu, koji se održavao pet godina zaredom. Maskenbal je postao prepoznatljiv u Opštini Danilovgrad, naročito zbog svog primarnog cilja – socijalizacije djece i mladih sa invaliditetom. Naš glavni cilj jeste, kao i svih prethodnih godina da stvaramo veze između našeg udruženja, i škola, kao i vrtida u okruženju. Na ovaj dan dajemo priliku svim mališanima, kako onima bez smetnji u razvoju, tako i onima sa smetnjama u razvoju da uplove u svijet svojih omiljenih junaka čijim maskama de se predstaviti. 2020. godine Maskenbal nije održan zbog pandemije izazvane COVID19.",
+    "text2": "Posjedujemo LICENCU za rad- psihološko savjetovanje, što govori o ozbiljnosti rada naše organizacije. Razbili smo predrasude prema osobama sa invaliditetom na teritoriji naše Opštine, postali smo prepoznati kao organizacija koja podstiče kreativnost, rad, uklanja barijere koje su do skoro postojale. Postali smo prepoznatljivi i van granica našeg grada, imali smo opsežnu kampanju putem gostovanja u televizijskim emisijama, novinskih tekstova, a putem društvenih mreža imate mogudnost da pratite naš rad",
+    "text3": "Takođe smo imali mnoštvo izložbi i revija sa našim proizvodima, donatorskih večeri, priredbi... Sarađujemo sa brojnim značajnim institucijama u lokalnoj zajednici, koji su nam od velike pomodi.",
+    "text4": "Stoga se unaprijed radujemo Vašoj podršci i interesovanju za naše aktivnosti, jer ciljna grupa na koju smo mi fokusirani – definitivno treba i zaslužuje punu pažnju naše zajednice."
+  },
+  "videos": {
+    "title1": "Pogledajte video naših aktivnosti",
+    "title2": "“Jednaki u različitostima”",
+    "title3": "“Razmisli prije nego što parkiraš!”"
+  }
+}

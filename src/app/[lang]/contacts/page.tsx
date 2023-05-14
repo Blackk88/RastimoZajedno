@@ -59,7 +59,7 @@ export default async function Contacts({ params }: Props) {
         <a
           href="https://www.instagram.com/nvo_rastimo_zajedno"
           target="_blank"
-          className="contacts__social-icon"
+          className="linkClasses.link linkClasses.linkSocial"
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faInstagram} />

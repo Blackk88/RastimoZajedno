@@ -21,7 +21,7 @@ export async function POST(req: Request, res: Response) {
     return NextResponse.json({ message: "Invalid input" }, { status: 422 });
   }
 
-  let transporter = nodemailer.createTransport({
+  const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
       user: process.env.EMAIL_SENDER,

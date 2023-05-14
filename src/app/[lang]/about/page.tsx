@@ -64,7 +64,7 @@ export default async function About({ params }: Props) {
   );
 }
 
-export async function getStaticParams() {
+export async function generateStaticParams() {
   const localeParams = i18n.locales.map((locale) => ({ lang: locale }));
 
   return localeParams;

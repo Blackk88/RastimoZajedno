@@ -155,7 +155,7 @@ export default async function Team({ params }: Props) {
   );
 }
 
-export function getStaticParams() {
+export function generateStaticParams() {
   const localeParams = i18n.locales.map((locale) => ({ lang: locale }));
 
   return localeParams;

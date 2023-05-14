@@ -7,13 +7,12 @@ import ModalDonate from "./client";
 import promo from "@/assets/promo.jpg";
 
 interface Props {
-  children: React.ReactNode;
   params: {
     lang: Locale;
   };
 }
 
-export default async function Home({ children, params }: Props) {
+export default async function Home({ params }: Props) {
   const dictionary = await getDictionary(params.lang);
 
   return (

@@ -9,6 +9,7 @@ function getLocale(request: NextRequest) {
 
   const negotiator = new Negotiator({ headers: negotiatorHeaders });
 
+  // @ts-ignore
   const locales: string[] = i18n.locales;
 
   const locale = negotiator.language(locales) || "en";

@@ -22,6 +22,9 @@ export const metadata = {
   icons: {
     icon: "/icon.png",
   },
+  title: "NVO Rastimo Zajedno",
+  description:
+    "Group of parents of children and youths with developmental disabilities, guided by a common goal and mission to improve the quality of life of their children!",
 };
 
 export async function generateStaticParams() {
@@ -36,7 +39,6 @@ export default async function Root({ children, params }: Props) {
   return (
     <html lang={params.lang}>
       <head>
-        <title>Rastimo Zajedno</title>
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
           rel="stylesheet"

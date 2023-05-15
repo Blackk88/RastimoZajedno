@@ -19,6 +19,7 @@ function getLocale(request: NextRequest) {
 export function middleware(request: NextRequest) {
   // Check if there is any supported locale in the pathname
   const pathname = request.nextUrl.pathname;
+  console.log(pathname);
   const pathnameIsMissingLocale = i18n.locales.every(
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   );
@@ -38,6 +39,6 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: [
     // Skip all internal paths (_next)
-    "/((?!api|_next/static|_next/image|assets|icon.png|sw.js).*)",
+    "/((?!_next).*)",
   ],
 };

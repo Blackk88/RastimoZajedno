@@ -10,6 +10,7 @@ import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 
 import "@/app/styles/globals.css";
+import "react-toastify/dist/ReactToastify.css";
 
 interface Props {
   children: React.ReactNode;
@@ -19,9 +20,6 @@ interface Props {
 }
 
 export const metadata = {
-  icons: {
-    icon: "/icon.png",
-  },
   title: "NVO Rastimo Zajedno",
   description:
     "Group of parents of children and youths with developmental disabilities, guided by a common goal and mission to improve the quality of life of their children!",
@@ -46,7 +44,7 @@ export default async function Root({ children, params }: Props) {
           crossOrigin="anonymous"
         />
       </head>
-      <body>
+      <body className="position-relative">
         <div className="container-lg main-wrapper p-0 d-flex flex-column min-vh-100">
           <Header dict={dictionary.navbar} />
           {children}

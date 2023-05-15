@@ -106,5 +106,12 @@
       "title": "Milena Nikolić.",
       "description": "Diplomirani logoped, Fakultet za specijalnu edukaciju i rehabilitaciju u Beogradu. Svoje praktično iskustvo stekla u Zavodu za psihofiziološke poremećaje i govornu patologiju “Prof. dr Cvetko Brajović”. Član sam udruženja “Rastimo zajedno”, gdje timskim radom i zajedničkim trudom nastojimo da poboljšamo kvalitet života osoba sa smetnjama u razvoju."
     }
+  },
+
+  "contactForm": {
+    "notification": {
+      "pending": "",
+      "success": "Thank you. Your message was sent successfully"
+    }
   }
 }

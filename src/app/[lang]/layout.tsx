@@ -18,6 +18,12 @@ interface Props {
   };
 }
 
+export const metadata = {
+  icons: {
+    icon: "/icon.png",
+  },
+};
+
 export async function generateStaticParams() {
   const localeParams = i18n.locales.map((locale) => ({ lang: locale }));
 

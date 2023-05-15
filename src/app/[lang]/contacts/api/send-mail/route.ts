@@ -5,7 +5,7 @@ export async function GET() {
   const res = await fetch("https://pokeapi.co/api/v2/pokemon");
   const data = await res.json();
 
-  return NextResponse.json({ data });
+  return NextResponse.json({ "Hello World": "Test" });
 }
 
 export async function POST(req: Request, res: Response) {

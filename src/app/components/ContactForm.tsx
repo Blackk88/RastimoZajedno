@@ -34,7 +34,7 @@ export default function ContactForm() {
       onSubmit={submitHandler}
     >
       <h2 className="text-center mt-2 mb-4">Send us a message...</h2>
-      <div className="d-flex gap-3">
+      <div className="d-md-flex gap-3">
         <div className="form-floating mb-4 w-100">
           <input
             required

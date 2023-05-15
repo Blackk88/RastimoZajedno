@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import Negotiator from "negotiator";
 
-import { i18n } from "../i18n-config";
+import { i18n } from "./i18n-config";
 
 function getLocale(request: NextRequest) {
   const negotiatorHeaders: Record<string, string> = {};
@@ -9,10 +9,9 @@ function getLocale(request: NextRequest) {
 
   const negotiator = new Negotiator({ headers: negotiatorHeaders });
 
-  // @ts-ignore
   const locales: string[] = i18n.locales;
 
-  const locale = negotiator.language(locales);
+  const locale = negotiator.language(locales) || "en";
   return locale;
 }
 

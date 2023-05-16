@@ -9,6 +9,8 @@ import teamPhoto5 from "@/assets/team/5.png";
 import teamPhoto6 from "@/assets/team/6.png";
 import teamPhoto7 from "@/assets/team/7.png";
 import teamPhoto8 from "@/assets/team/8.png";
+import teamPhoto9 from "@/assets/team/9.png";
+import teamPhoto10 from "@/assets/team/10.png";
 
 import { getDictionary } from "@/get-dictionary";
 
@@ -190,10 +192,10 @@ export default async function Team({ params }: Props) {
             <Image
               src={teamPhoto4}
               alt="Miloš Kuzmanović photo"
-              className="rounded w-100 shadow border"
+              className="rounded w-100 shadow border object-fit-cover "
               width={600}
               height={500}
-              style={{ objectFit: "cover" }}
+              style={{ objectPosition: "top" }}
             />
           </div>
           <div className="col-12 col-lg-6">
@@ -202,6 +204,50 @@ export default async function Team({ params }: Props) {
                 {dictionary.ourTeam.member4.title}
               </span>{" "}
               {dictionary.ourTeam.member4.description}
+            </p>
+          </div>
+        </div>
+
+        <hr className="my-5" />
+
+        <div className="d-flex row">
+          <div className="col-12 col-lg-6">
+            <Image
+              src={teamPhoto9}
+              alt="Suzana Koletić photo"
+              className="rounded w-100 shadow border object-fit-cover"
+              width={600}
+              height={500}
+            />
+          </div>
+          <div className="col-12 col-lg-6">
+            <p className="fs-5 mt-4 mt-lg-0">
+              <span className="fs-4 fw-bold">
+                {dictionary.ourTeam.member9.title}
+              </span>{" "}
+              {dictionary.ourTeam.member9.description}
+            </p>
+          </div>
+        </div>
+
+        <hr className="my-5" />
+
+        <div className="d-flex flex-row-reverse row mt-5">
+          <div className="col-12 col-lg-6">
+            <Image
+              src={teamPhoto10}
+              alt="Jelisavka Gavranić photo"
+              className="rounded w-100 shadow border object-fit-cover"
+              width={600}
+              height={600}
+            />
+          </div>
+          <div className="col-12 col-lg-6">
+            <p className="fs-5 mt-4 mt-lg-0">
+              <span className="fs-4 fw-bold">
+                {dictionary.ourTeam.member10.title}
+              </span>{" "}
+              {dictionary.ourTeam.member10.description}
             </p>
           </div>
         </div>

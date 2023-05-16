@@ -45,6 +45,7 @@ export function Header({ dict }: { dict: Dictionary }) {
               className={classes.logo}
               width={150}
               height={150}
+              priority
             />
           </Link>
           <button

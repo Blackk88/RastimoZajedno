@@ -1,0 +1,15 @@
+.btnSubmit {
+  background-color: #f7cc02;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+
+  &:hover {
+    background-color: darken($color: #f7cc02, $amount: 2);
+  }
+
+  &:active {
+    background-color: lighten($color: #f7cc02, $amount: 2) !important;
+    border: none;
+    scale: (0.99);
+  }
+}

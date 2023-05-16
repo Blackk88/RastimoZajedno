@@ -9,8 +9,9 @@ import { Locale, i18n } from "@/i18n-config";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 
-import "@/app/styles/globals.css";
 import "react-toastify/dist/ReactToastify.css";
+import "bootstrap/dist/css/bootstrap.css";
+import "@/app/styles/globals.css";
 
 interface Props {
   children: React.ReactNode;
@@ -36,25 +37,14 @@ export default async function Root({ children, params }: Props) {
 
   return (
     <html lang={params.lang}>
-      <head>
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-          crossOrigin="anonymous"
-        />
-      </head>
-      <body className="position-relative">
+      <head></head>
+      <body className="">
         <div className="container-lg main-wrapper p-0 d-flex flex-column min-vh-100">
           <Header dict={dictionary.navbar} />
           {children}
           <Footer dict={dictionary.footer} />
         </div>
-        <Script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-          crossOrigin="anonymous"
-        />
+        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" />
       </body>
     </html>
   );

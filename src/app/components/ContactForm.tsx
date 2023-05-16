@@ -49,10 +49,10 @@ export default function ContactForm({ dictionary }: Props) {
   return (
     <>
       <form
-        className="form-floating p-4 shadow rounded-4 my-4 mx-auto col-12 col-md-8 col-lg-6 col-xl-5"
+        className="form-floating p-4 shadow rounded-4 my-4 mx-auto col-12 col-md-8 col-lg-8 col-xl-6"
         onSubmit={submitHandler}
       >
-        <h2 className="text-center mt-2 mb-4">Send us a message...</h2>
+        <h2 className="text-center mt-2 mb-4">Send us a message</h2>
         <div className="d-md-flex gap-3">
           <div className="form-floating mb-4 w-100">
             <input
@@ -100,7 +100,10 @@ export default function ContactForm({ dictionary }: Props) {
             rows={4}
           />
         </div>
-        <button type="submit" className="btn btn-primary w-100">
+        <button
+          type="submit"
+          className="btn btn-info w-100 py-3 rounded-5 fw-bold text-uppercase fs-5 text-white"
+        >
           Submit
         </button>
       </form>

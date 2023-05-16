@@ -105,7 +105,7 @@ export default function ContactForm({ dictionary }: Props) {
   function inputValidation(input: string, value: string) {
     switch (input) {
       case "name":
-        const regName = /^[a-zA-Z]{3,}$/;
+        const regName = /.{3,}/;
         return regName.test(value);
       case "email":
         const regEmail = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;

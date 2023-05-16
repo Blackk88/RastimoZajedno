@@ -11,6 +11,7 @@ import teamPhoto7 from "@/assets/team/7.png";
 import teamPhoto8 from "@/assets/team/8.png";
 import teamPhoto9 from "@/assets/team/9.png";
 import teamPhoto10 from "@/assets/team/10.png";
+import teamPhoto11 from "@/assets/team/11.png";
 
 import { getDictionary } from "@/get-dictionary";
 
@@ -251,6 +252,30 @@ export default async function Team({ params }: Props) {
             </p>
           </div>
         </div>
+
+        <hr className="my-5" />
+
+        <div className="d-flex row">
+          <div className="col-12 col-lg-6">
+            <Image
+              src={teamPhoto11}
+              alt="Andrea Cicmil photo"
+              className="rounded w-100 shadow border object-fit-cover"
+              width={600}
+              height={500}
+            />
+          </div>
+          <div className="col-12 col-lg-6">
+            <p className="fs-5 mt-4 mt-lg-0">
+              <span className="fs-4 fw-bold">
+                {dictionary.ourTeam.member11.title}
+              </span>{" "}
+              {dictionary.ourTeam.member11.description}
+            </p>
+          </div>
+        </div>
+
+        <hr className="my-5" />
       </section>
     </main>
   );

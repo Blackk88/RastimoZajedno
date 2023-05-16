@@ -214,7 +214,12 @@ export default function ContactForm({ dictionary }: Props) {
           Send Message
         </button>
       </form>
-      <ToastContainer theme="colored" transition={Slide} autoClose={3000} />
+      <ToastContainer
+        theme="colored"
+        transition={Slide}
+        autoClose={3000}
+        limit={5}
+      />
     </>
   );
 }

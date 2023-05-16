@@ -25,7 +25,7 @@ export default async function Contacts({ params }: Props) {
   const dictionary = await getDictionary(params.lang);
 
   return (
-    <div className="container-lg position-relative">
+    <div className="container-lg position-relative mb-5">
       <ContactForm dictionary={dictionary.contactForm} />
 
       <div className="mt-5 d-md-flex">

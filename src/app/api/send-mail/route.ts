@@ -1,12 +1,5 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
-
-export async function GET() {
-  const res = await fetch("https://pokeapi.co/api/v2/pokemon");
-  const data = await res.json();
-
-  return NextResponse.json({ "Hello World": "Test" });
-}
 
 export async function POST(req: Request, res: Response) {
   const data = await req.json();
@@ -36,7 +29,7 @@ export async function POST(req: Request, res: Response) {
     },
     replyTo: data.email,
     to: process.env.EMAIL_RECIPIENT,
-    subject: data.subject,
+    subject: data.subject ?? "No Subject",
     html: `
     <i>Message from Rastimo Zajedno Website</i>
     <h4>Message from: ${data.name} Email: ${data.email}</h4>

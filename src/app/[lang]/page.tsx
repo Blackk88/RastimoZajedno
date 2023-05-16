@@ -20,10 +20,11 @@ export default async function Home({ params }: Props) {
       <Image
         src={promo}
         alt="Group of children with stage and a lot of balloons."
-        width={1000}
-        height={800}
+        width={800}
+        height={600}
         className="w-100 object-fit-contain h-100 rounded shadow"
         placeholder="blur"
+        priority
       />
       <h1 className="text__promo px-3 text-center my-5 fw-bold text-shadow">
         {dictionary.home.promo}

@@ -10,13 +10,18 @@ import classes from "./header.module.css";
 interface Dictionary {
   home: string;
   about: string;
+  news: string;
   work: string;
   video: string;
   contacts: string;
   team: string;
 }
 
-export function Header({ dict }: { dict: Dictionary }) {
+type HeaderProps = {
+  dict: Dictionary;
+};
+
+export function Header({ dict }: Readonly<HeaderProps>) {
   const pathname = usePathname();
   const localePath = pathname.split("/")[1];
 
@@ -36,7 +41,7 @@ export function Header({ dict }: { dict: Dictionary }) {
   return (
     <header className="">
       <Contacts />
-      <nav className="navbar navbar-expand-md justify-content-between align-items-center">
+      <nav className="navbar navbar-expand-lg justify-content-between align-items-center">
         <div className="container-fluid text-center">
           <Link href={localePath} className="navbar-brand">
             <Image
@@ -112,7 +117,17 @@ export function Header({ dict }: { dict: Dictionary }) {
                   </li>
                 </ul>
               </li>
-              <li className="nav-item w-100">
+              <li className="nav-item">
+                <Link
+                  className={`nav-link ${classes.navLink} ${
+                    isLinkActive("/news") ? classes.active : ""
+                  }`}
+                  href={getLinkHref("/news")}
+                >
+                  {dict.news}
+                </Link>
+              </li>
+              <li className="nav-item">
                 <Link
                   className={`nav-link ${classes.navLink} ${
                     isLinkActive("/our-work") ? classes.active : ""

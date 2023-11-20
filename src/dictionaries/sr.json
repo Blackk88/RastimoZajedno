@@ -2,6 +2,7 @@
   "navbar": {
     "home": "Početna",
     "about": "O nama",
+    "news": "Vesti",
     "work": "Naš rad",
     "video": "Video",
     "contacts": "Kontakt",
@@ -131,6 +132,16 @@
     "notification": {
       "pending": "",
       "success": "Hvala! Vaša poruka je poslata uspješno"
+    }
+  },
+
+  "news": {
+    "november": {
+      "firstParagraph": "➡️ Naše Udruženje se odazvalo pozivu da prisustvuje manifestaciji Dani divljeg šipka koja se organizuje u Donjim Zagaračima.",
+      "secondParagraph": "✅ Cilj ove manifestacije jeste promocija tradicionalnih proizvoda kao i predstavljanje potencijala ruralnog turizma. Naši korisnici su izrađivali podmetače u obliku šipka, kao simbola manifestacije, i bojali ih. Pored tih, izloženi su i drugi mnogobrojni predmeti poput magneta, satova, privezaka... 🎁🎨",
+      "thirdParagraph": "➡️ Posjećenost je bila velika, a posjetioci su imali priliku da pogledaju ukrase koji se prave u našoj radionici. Prodajni štand su posjetili i predsjednik Crne Gore gospodin Jakov Milatović kao i predsjednik opštine Danilovgrad gospodin Aleksandar Grgurović.",
+      "forthParagraph": "➡️ Promovisanje rada Udruženja doprinosi većoj vidljivosti i povećavanju svijesti o osobama sa invaliditetom i njihovim potencijalima i mogućnostima.  Zahvaljujemo se organizatorima na pozivu i ukazanoj prilici da zajedno doprinesemo afirmaciji pravih vrijednosti. 😊",
+      "fifthParagraph": "❗️ Projekat “Ravnopravno učešće OSI u društvu” podržan je od strane Ministarstva rada i socijalnog staranja."
     }
   }
 }

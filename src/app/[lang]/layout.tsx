@@ -10,8 +10,9 @@ import { Locale, i18n } from "@/i18n-config";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 
-import "bootstrap/dist/css/bootstrap.css";
+import "@/app/styles/bootstrap-customize.scss";
 import "@/app/styles/globals.css";
+import "bootstrap/dist/css/bootstrap.css";
 
 interface Props {
   children: React.ReactNode;

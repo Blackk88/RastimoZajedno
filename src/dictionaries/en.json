@@ -2,6 +2,7 @@
   "navbar": {
     "home": "Home",
     "about": "About",
+    "news": "News",
     "work": "Our work",
     "video": "Video",
     "contacts": "Contacts",
@@ -132,6 +133,16 @@
     "notification": {
       "pending": "",
       "success": "Thank you. Your message was sent successfully"
+    }
+  },
+
+  "news": {
+    "november": {
+      "firstParagraph": "➡️ Our Association responded to the call to attend the Wild Arrow Days event organized in Donji Zagarči.",
+      "secondParagraph": "✅ The goal of this event is to promote traditional products as well as present the potential of rural tourism. Our users made rod-shaped coasters, as a symbol of manifestation, and painted them. In addition to these, numerous other objects are also exhibited such as magnets, watches, pendants... 🎁🎨 ",
+      "thirdParagraph": " ➡️ The turnout was great, and visitors had the opportunity to see the decorations made in our workshop. The sales booth was visited by the President of Montenegro Mr. Jakov Milatović as well as the President of Danilovgrad Municipality Mr. Aleksandar Grgurović.",
+      "forthParagraph": "➡️ Promoting the work of the Association contributes to greater visibility and an increase in awareness of persons with disabilities and their potential and capabilities. We would like to thank the organizers for the invitation and the opportunity to contribute together to the affirmation of true values. 😊",
+      "fifthParagraph": "❗️ The project 'Equal participation of OSI' in society is supported by the Ministry of Labor and Social Welfare."
     }
   }
 }

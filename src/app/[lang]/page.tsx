@@ -2,9 +2,9 @@ import Image from "next/image";
 
 import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/get-dictionary";
-import ModalDonate from "@/app/components/ModalDonate";
 
 import promo from "@/assets/promo.jpg";
+import AnimatedHeartLink from "@/app/components/AnimatedHeartLink";
 
 interface Props {
   params: {
@@ -51,7 +51,7 @@ export default async function Home({ params }: Props) {
         </div>
       </div>
 
-      <ModalDonate dictionary={dictionary.donations} />
+      <AnimatedHeartLink dictionary={dictionary.donations} />
     </main>
   );
 }
